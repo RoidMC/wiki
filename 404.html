@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+    <!-- RMC-Err_Page 2.0 -->
+<head>
+  <meta charset="UTF-8">
+  <title>RoidMC-Error</title>
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+  <link rel="shortcut icon" href="//static.roidmc.net/web/ico/favicon.ico">
+  <link rel="stylesheet" href="//static.roidmc.net/web/err/css/style.css">
+  <script src="//static.roidmc.net/web/js/err-page-v.js"></script>
+  <script src='//static.roidmc.net/web/err/js/jquery.min.js'></script>
+  <script>
+    //获取时间
+    function currentTime(){
+        var d = new Date(),str = '';
+         str += d.getFullYear()+'';
+        //str+= d.getMonth() + 1+'月';
+        //str+= d.getDate()+'日';
+        //str+= d.getHours()+'时'; 
+        //str+= d.getMinutes()+'分'; 
+        //str+= d.getSeconds()+'秒'; 
+        return str;
+        }
+        setInterval(function(){$('#time').html(currentTime)},1000);
+  </script>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="container">
+            <div id="scene" class="scene" data-hover-only="false">
+                <div class="circle" data-depth="1.2"></div>
+                <div class="one" data-depth="0.9">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+                <div class="two" data-depth="0.60">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+                <div class="three" data-depth="0.40">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+                <p class="p404" data-depth="0.50">404</p>
+                <p class="p404" data-depth="0.10">404</p>
+            </div>
+            <div class="text">
+                <article>
+                    <p>您请求的资源不存在或已被移除<br>请点击下方按钮返回首页
+                        <br>2020 - <h id="time"></h>&ensp;©&ensp;<a href="https://www.roidmc.com">RoidMC Studio</p>
+                    <a href="https://wiki.roidmc.com"><button>返回首页</button></a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <script src='//static.roidmc.net/web/err/js/parallax.min.js'></script>
+    <script src="//static.roidmc.net/web/err/js/script.js"></script>
+</body>
+</html>
