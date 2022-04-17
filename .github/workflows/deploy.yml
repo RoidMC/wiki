@@ -1,10 +1,10 @@
 name: Wiki Delpoy
 
-# 触发条件: push到Master分支后自动触发
+# 触发条件: push到Main分支后自动触发
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
