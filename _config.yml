@@ -103,5 +103,5 @@ theme: stellar
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: 'https://github.com/RoidMC/wiki.git'
-  branch: main
+  repo: git@github.com:RoidMC/wiki.git'
+  branch: gh-pages
