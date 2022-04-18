@@ -1,0 +1,104 @@
+#侧边栏设置
+sidebar:
+  #LOGO设置
+  logo:
+    avatar: '[config.avatar](/)'
+  #主导航栏
+  menu:
+    website: '[官网](https://www.roidmc.com)'
+    bbs: '[BBS论坛](https://bbs.roidmc.com)'
+    wiki: '[Wiki](/)'
+    status: '[状态监控](https://status.roidmc.com)'
+    feedback: '[建议反馈](https://feedback.roidmc.com)'
+ # Sidebar widgets
+  widget_layout:
+    index: [welcome, recent] # for home/wiki/categories/tags/archives/404 pages
+    page: [welcome, toc] # for pages using 'layout:page'
+    post: [toc, repo_info] # for pages using 'layout:post'
+    wiki: [toc, repo_info, wiki_more] # for pages using 'layout:wiki'
+  widgets:
+    # Recent update
+    recent:
+      layout: recent
+      rss:  /atom.xml # npm i hexo-generator-feed
+      limit: 5 # Count of posts
+    # TOC (valid only in layout:post/wiki)
+    toc:
+      layout: toc
+      list_number: false
+      min_depth: 2
+      max_depth: 5
+      fallback: recent # Use a backup widget when toc does not exist.
+    # welcome
+    welcome:
+      layout: markdown
+      title: 欢迎
+      content: | # support markdown
+        欢迎使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar/) 主题，下面是您的入门指南，祝您使用愉快！
+        <br>
+        **第一步**
+        创建 `blog/_config.stellar.yml` 文件，在此文件中填写需要自定义的主题配置。
+        <br>
+        **第二步**
+        创建 `blog/source/_data/widgets.yml` 文件，此文件中填写需要自定义的侧边栏组件，例如 `welcome` 组件。
+        <br>
+        如果有任何疑问，请先查阅[文档](https://xaoxuu.com/wiki/stellar/)，如果文档中没有提供，请提 [issue](https://github.com/xaoxuu/hexo-theme-stellar/issues/) 向开发中询问。
+
+
+#文章设置
+article:
+  # 如果没有指定封面，是否根据 tags 作为关键词搜索封面？
+  auto_cover: false # search from https://source.unsplash.com/
+  # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
+  auto_excerpt: 200
+  # 分类颜色
+  category_color:
+    '新闻稿': '#DA0F47'
+  # 文章许可协议
+  license: '本文采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+  # 分享
+  share:  [wechat, weibo, email, link]
+  # 相关文章，需要安装插件 (for layout: post)
+  # npm i hexo-related-popular-posts
+  related_posts:
+    enable: false
+    max_count: 5
+    auto_cover: true # 如果没有封面就根据 tags 作为关键词搜索封面，开了此项将不会自动从文章中提取首张图片作为封面了。
+
+
+
+#页脚设置
+footer:
+  social:
+     qq:
+       icon: '<img src="/wiki_assets/icon/qq-color.svg"/>'
+       url: https://jq.qq.com/?_wv=1027&k=MFpCIFyQ
+     github:
+       icon: '<img src="/wiki_assets/icon/github-octocat.svg"/>'
+       url: https://github.com/RoidMC
+     discord:
+       icon: '<img src="/wiki_assets/icon/discord-color.svg"/>'
+       url: https://discord.com/invite/BasAWTf8ct
+     email:
+       icon: '<img src="/wiki_assets/icon/email-color.svg"/>'
+       url: mailto:hi@roidmc.com
+  sitemap:
+     'Wiki':
+       - '[近期](/)'
+       - '[分类](/categories)'
+       - '[标签](/tags)'
+       - '[归档](/archives)'
+     #'相关站点':
+     #  - '[RoidMC官网](https://www.roidmc.com)'
+     #  - '[BBS论坛](https://bbs.roidmc.com)'
+     #  - '[建议反馈](https://feedback.roidmc.com)'
+     #  - '[状态监控](https://status.roidmc.com)'
+     #'友情链接':
+     #  - '[申请友链](https://www.roidmc.com/contact-us)'
+  license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
+  source: '[GitHub](https://github.com/RoidMC/wiki)'
+  more: # string or array (support markdown)
+
+# Local search (Todo)
+local_search:
+  enable: true
