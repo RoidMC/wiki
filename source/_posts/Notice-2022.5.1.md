@@ -1,5 +1,8 @@
 ---
+date: 2022-5-1
 title: 更新公告
+categories: [更新公告]
+tags: [更新公告]
 ---
 欢迎各位冒险家加入RoidMC服务器
 

@@ -57,20 +57,18 @@ article:
     max_count: 5
     auto_cover: true # 如果没有封面就根据 tags 作为关键词搜索封面，开了此项将不会自动从文章中提取首张图片作为封面了。
 
-
-
 #页脚设置
 footer:
   social:
      qq:
        icon: '<img src="/wiki_assets/icon/qq-color.svg"/>'
-       url: https://jq.qq.com/?_wv=1027&k=MFpCIFyQ
+       url: https://rmc.ink/social/qq
      github:
        icon: '<img src="/wiki_assets/icon/github-octocat.svg"/>'
-       url: https://github.com/RoidMC
+       url: https://osc.roidmc.com
      discord:
        icon: '<img src="/wiki_assets/icon/discord-color.svg"/>'
-       url: https://discord.com/invite/BasAWTf8ct
+       url: https://rmc.ink/social/discord
      email:
        icon: '<img src="/wiki_assets/icon/email-color.svg"/>'
        url: mailto:hi@roidmc.com
@@ -88,7 +86,7 @@ footer:
      #'友情链接':
      #  - '[申请友链](https://www.roidmc.com/contact-us)'
   license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
-  source: '[GitHub](https://github.com/RoidMC/wiki)'
+  source: '[GitHub](https://osc.roidmc.com/wiki)'
   more: # string or array (support markdown)
 
 # Local search (Todo)
