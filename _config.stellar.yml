@@ -89,6 +89,11 @@ footer:
   source: '[GitHub](https://osc.roidmc.com/wiki)'
   more: # string or array (support markdown)
 
+#Mathjax:
+#需在Markdown文件开头加入mathjax: true
+    enable: false
+    cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
 # Local search (Todo)
 local_search:
   enable: true
