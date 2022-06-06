@@ -32,15 +32,15 @@ jobs:
       # 配置Hexo运行安装环境
       - name: Setup Hexo
         env:
-          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
+          ACTION_DEPLOY_KEY: ${{ secrets.WIKI_DEPLOY_KEY }}
         run: |
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "82279230+chencu5958@users.noreply.github.com"
-          git config --global user.name "chencu5958"
+          git config --global user.email "106982374+RoidMC-Bot@users.noreply.github.com"
+          git config --global user.name "roidmc-bot"
           npm install hexo-cli -g
           npm install
 
