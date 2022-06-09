@@ -9,7 +9,7 @@ sidebar:
     bbs: '[BBS论坛](https://bbs.roidmc.com)'
     wiki: '[Wiki](/)'
     status: '[状态监控](https://status.roidmc.com)'
-    feedback: '[建议反馈](https://feedback.roidmc.com)'
+    support: '[帮助中心](https://support.roidmc.com)'
  # Sidebar widgets
   widget_layout:
     index: [welcome, recent] # for home/wiki/categories/tags/archives/404 pages
