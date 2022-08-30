@@ -11,9 +11,9 @@ description: 'RoidMC Wiki'
 keywords: 
 author: RoidMC Studios
 language: 
-- zh-cn
-- zh-hant
-- en-us
+- zh-CN
+- zh-TW
+- en
 timezone: Asia/Shanghai
 
 # URL
