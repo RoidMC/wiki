@@ -4,14 +4,14 @@
 
 # Site
 title: RoidMC Wiki
-avatar: /wiki_assets/logo.png
-favicon: /wiki_assets/favicon.ico
+avatar: /wiki-assets/logo.png
+favicon: /wiki-assets/favicon.ico
 subtitle: ''
 description: 'RoidMC Wiki' 
-keywords: 
+keywords: 'RoidMC'
 author: RoidMC Studios
 language: 
-- zh-cn
+- zh-CN
 - zh-TW
 - en
 timezone: Asia/Shanghai

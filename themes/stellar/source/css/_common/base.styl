@@ -12,15 +12,8 @@ a
   &:hover
     color: $color-hover
 
-// md > a
-p, li
-  >a:not([class])
-    margin: 0 1px
-    padding: 4px
-    border-radius: 4px
-    &:hover
-      color: darken($color-hover, 10)
-      background: alpha($color-hover, 0.08)
+p:not([class]) 
+  text-align: justify
 
 hr
   color: var(--text-meta)
@@ -60,3 +53,6 @@ table:not([class])
     trans()
     &:hover
       background: var(--block)
+
+*[ff=title]
+  font-family: $ff-logo
