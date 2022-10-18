@@ -1,4 +1,4 @@
-# <img alt="RoidMC-Wiki" width="30" src="https://raw.githubusercontent.com/RoidMC/wiki/main/source/wiki_assets/logo.png" /> RoidMC Wiki
+# <img alt="RoidMC-Wiki" width="30" src="https://raw.githubusercontent.com/RoidMC/wiki/main/source/wiki-assets/logo.png" /> RoidMC Wiki
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](https://github.com/RoidMC/wiki/blob/main/LICENSE)
 [![Hexo-based](https://img.shields.io/badge/-Hexo-gray?style=flat-square&logo=Hexo)](https://hexo.io)
