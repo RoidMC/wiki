@@ -11,42 +11,11 @@ sidebar:
     status: '[状态监控](https://status.roidmc.com)'
     support: '[帮助中心](https://support.roidmc.com)'
  # Sidebar widgets
-  widget_layout:
+  widgets:
     index: [welcome, recent] # for home/wiki/categories/tags/archives/404 pages
     page: [welcome, toc] # for pages using 'layout:page'
-    post: [toc, repo_info] # for pages using 'layout:post'
-    wiki: [toc, repo_info, wiki_more] # for pages using 'layout:wiki'
-  widgets:
-    # Recent update
-    recent:
-      layout: recent
-      rss:  /atom.xml # npm i hexo-generator-feed
-      limit: 5 # Count of posts
-    # TOC (valid only in layout:post/wiki)
-    toc:
-      layout: toc
-      list_number: false
-      min_depth: 2
-      max_depth: 5
-      fallback: recent # Use a backup widget when toc does not exist.
-    # welcome
-    welcome:
-      layout: markdown
-      title: 欢迎
-      content: | # support markdown
-        欢迎使用RoidMC官方WIKI
-    # github侧边栏用户信息（禁用）
-    #ghuser:
-    #  layout: ghuser
-    #  api: https://api.github.com
-    #  username: roidmc # your github login username
-    #  avatar: true
-    #ghuser_mini:
-    #  layout: ghuser
-    #  header: # GitHub Info
-    #  api: https://api.github.com
-    #  username: roidmc # your github login username
-    #  avatar: false
+    post: [toc, ghrepo] # for pages using 'layout:post'
+    wiki: [ghrepo, toc, wiki_more] # for pages using 'layout:wiki'
 
 
 #文章设置
