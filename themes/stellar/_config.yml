@@ -1,6 +1,6 @@
 ######## Stellar info ########
 stellar:
-  version: '1.11.0'
+  version: '1.13.0'
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
   cdn_css: # Use cdn links instead of /css/main.css
@@ -25,10 +25,14 @@ sidebar:
     # about: '[关于](/about/)'
   # Sidebar widgets
   widgets:
-    index: [welcome, recent] # for home/wiki/categories/tags/archives/404 pages
+    index: [welcome, recent, timeline] # for home/wiki/categories/tags/archives/404 pages
     page: [welcome, toc] # for pages using 'layout:page'
-    post: [toc, ghrepo] # for pages using 'layout:post'
-    wiki: [ghrepo, toc, wiki_more] # for pages using 'layout:wiki'
+    post: [toc, ghrepo, ghissues] # for pages using 'layout:post'
+    wiki: [toc, ghrepo, ghissues, related] # for pages using 'layout:wiki'
+
+######## Index ########
+post-index: # 近期发布 分类 标签 归档 and ...
+  # '朋友文章': /friends/rss/
 
 
 ######## Main ########
@@ -55,12 +59,11 @@ article:
   related_posts:
     enable: false
     max_count: 5
-    auto_cover: true # 如果没有封面就根据 tags 作为关键词搜索封面，开了此项将不会自动从文章中提取首张图片作为封面了。
 
 
 ######## Comments ########
 comments:
-  service: # beaudar, utterances, valine, twikoo, waline
+  service: # beaudar, utterances, twikoo, waline
   # beaudar
   # https://beaudar.lipk.org/
   beaudar:
@@ -99,28 +102,6 @@ comments:
     data-loading: lazy
     crossorigin: anonymous
 
-  valine:
-    js: https://fastly.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js
-    appId: # your appId
-    appKey: # your appKey
-    placeholder:
-    requiredFields: [nick, mail]
-    enableQQ: true # Unstable avatar link
-    recordIP: false # Record commenter IP
-    avatar: robohash # gravatar style https://valine.js.org/avatar
-    pageSize: 10 # comment list page size
-    lang: zh-cn
-    highlight: true
-    mathJax: false
-    tagMeta: [博主, 小伙伴, 访客] # 标签要显示的文字,默认'博主,小伙伴,访客'
-    metaPlaceholder:
-      nick: "昵称/QQ号(必填)"
-      mail: "邮箱（必填，完全保密）"
-      link: "网址(https://)"
-    master: #md5加密后的博主邮箱
-      - 6783037F2DF30EAB99F9FC256157D875
-    friends: #md5加密后的小伙伴邮箱
-      - 6783037F2DF30EAB99F9FC256157D875
   # Twikoo
   # https://twikoo.js.org/
   twikoo:
@@ -220,10 +201,10 @@ tag_plugins:
   # {% quot %}
   quot:
     default: # 可以自行配置多种图标方案
-      prefix: https://s2.loli.net/2022/01/04/vsTB5pGrIHfPxSj.png
-      suffix: https://s2.loli.net/2022/01/04/NORdtjlAhifZSns.png
+      prefix: https://bu.dusays.com/2022/10/24/63567d3e092ff.png
+      suffix: https://bu.dusays.com/2022/10/24/63567d3e0ab55.png
     hashtag:
-      prefix: https://s2.loli.net/2022/01/04/UvHcsa73jQPnobq.png
+      prefix: https://bu.dusays.com/2022/10/24/63567d3e07da3.png
   # {% emoji %}
   emoji:
     default: https://fastly.jsdelivr.net/gh/cdn-x/emoji/qq/%s.gif
@@ -251,10 +232,11 @@ plugins:
     friends: /js/plugins/friends.js
     ghinfo: /js/plugins/ghinfo.js
     timeline: /js/plugins/timeline.js
-  
+    linkcard: /js/plugins/linkcard.js
+    fcircle: /js/plugins/fcircle.js
 
   marked: https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js
-
+  
   ## optional plugins ##
   # preload
   preload:
@@ -286,7 +268,6 @@ plugins:
     js: https://fastly.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
     css: https://fastly.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css
     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
-    # 使用valine评论可以写: .vcontent img:not(.vemoji)
     # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
     # 使用waline评论可以写: #waline_container .vcontent img
     selector: .swiper-slide img # 多个选择器用英文逗号隔开
@@ -327,9 +308,10 @@ style:
   smooth_scroll: true # true / false
   font-size: 16px
   font-family:
-    logo: system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif
-    body: system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif
-    code: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif
+    logo: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+  text-align: left
   color:
     common:
       theme: '#1BCDFC' # 主题色
@@ -358,6 +340,9 @@ style:
   codeblock:
     scrollbar: 4px
     highlightjs_theme: https://fastly.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/atom-one-dark.min.css
+  loading:
+    loading: 正在加载
+    error: 加载失败，请稍后重试。
 
 default:
   avatar: https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
