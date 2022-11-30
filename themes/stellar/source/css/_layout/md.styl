@@ -1,11 +1,14 @@
-article.md
+.md-text
   max-width: 100%
-  padding: 1rem
+  padding: 0 1rem
+  margin-top: 1rem
+  &:first-child
+    margin-top: 0
   color: var(--text-p1)
   line-height: 1.7
   word-break: break-word
 
-article.md.excerpt
+.md-text.excerpt
   p
     font-size: $fs-14
     margin: 1em 0
@@ -16,7 +19,7 @@ h1.article-title
   line-height: 1.2
   color: var(--text-p0)
 
-article.md.content
+.md-text.content
   position: relative
   margin-bottom: 2rem
   display: flex
@@ -33,7 +36,7 @@ article.md.content
       align-self: center
       border-bottom-style: dashed
       border-bottom-color: $color-accent
-  >:first-child
+  >:first-child:not(h1)
     margin-top: 0
   h1:not(:first-child)
     margin-top: 2em
@@ -50,7 +53,7 @@ article.md.content
 
 
 
-.md
+.md-text
   ul:not(:last-child),
   ol:not(:last-child)
     padding-bottom: .5rem
@@ -62,7 +65,7 @@ article.md.content
   p,blockquote,.tag-plugin,ul,ol,.highlight,table
     *
       --gap-p: .5rem
-  p,>ul:not(:last-child),>ol:not(:last-child)
+  p,ul,ol
     margin-top: 'calc(%s - 4px)' % var(--gap-p)
     margin-bottom: 'calc(%s - 4px)' % var(--gap-p)
   .tag-plugin,iframe
@@ -72,7 +75,7 @@ article.md.content
     display: block
 
 // titles
-article.md.content
+.md-text.content
   a.headerlink:before
     opacity: 0
     content: '#'
@@ -98,45 +101,34 @@ article.md.content
   h5+h6
     margin-top: -0.5rem
 
-article.md p
+.md-text p
   font-size: $fs-p
 
-article.md pre
+.md-text pre
   -webkit-font-smoothing: auto
   -moz-osx-font-smoothing: auto
 
-article.md
+.md-text
   .center
     align-self: center
 
 // div
-article.md>div
+.md-text>div
   margin: var(--gap-p) 0
-// blockquote
-article.md blockquote
-  margin-left: 0
-  margin-right: 0
-  padding: 0.75rem
-  background: var(--block)
-  $bd-left = 4px
-  border-left: $bd-left solid var(--text-meta)
-  border-radius: $bd-left $border-block $border-block $bd-left
-  color: var(--text-p2)
 
 
-article.md img
+.md-text img
   border-radius: $border-image
   margin: auto
   display: block
 
-article.md 
+.md-text 
   p:not([class]), li:not([class])
     a:not([class])
       position: relative
       padding: 2px 0
       text-decoration: none
       line-height: 1.2
-      word-break: keep-all
       &:after
         content: ''
         position: absolute
