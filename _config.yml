@@ -12,6 +12,7 @@ keywords: 'RoidMC'
 author: RoidMC Studios
 language: 
 - zh-CN
+- zh-cn # Github Actions用，请勿删除
 - zh-TW
 - en
 timezone: Asia/Shanghai
