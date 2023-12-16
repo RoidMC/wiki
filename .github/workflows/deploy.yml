@@ -9,22 +9,22 @@ on:
 jobs:
   build:
     name: Wiki Build & Delpoy
-    # 使用Ubuntu-22.04作为编译部署环境
-    runs-on: ubuntu-22.04 
+    # 使用最新版Ubuntu作为编译部署环境
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout codes
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 设置Node.js环境
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
 
       # 设置包缓存目录
       - name: Cache node modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
