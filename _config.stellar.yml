@@ -1,27 +1,38 @@
-#侧边栏设置
-sidebar:
-  #LOGO设置
-  logo:
-    avatar: '[config.avatar](/)'
-  #主导航栏
-  menu:
-    website: '[官网](https://www.roidmc.com)'
-    bbs: '[社区](https://bbs.roidmc.com)'
-    wiki: '[Wiki](/)'
-    status: '[状态监控](https://status.roidmc.com)'
-    support: '[帮助中心](https://support.roidmc.com)'
- # Sidebar widgets
-  widgets:
-    index: [welcome, recent] # for home/wiki/categories/tags/archives/404 pages
-    page: [welcome, toc] # for pages using 'layout:page'
-    post: [toc, ghrepo] # for pages using 'layout:post'
-    wiki: [ghrepo, toc, wiki_more] # for pages using 'layout:wiki'
-
+######## Stellar info ########
+stellar:
+  version: '1.25.0'
+  homepage: 'https://xaoxuu.com/wiki/stellar/'
+  repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
+  cdn_css: # Use cdn links instead of /css/main.css
+  cdn_js: # Use cdn links instead of /js/main.js
+  
+# 侧边栏设置
+# 左上角显示的 logo 区域，包含图标、大标题、副标题
+logo:
+  avatar: '[config.avatar](/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+  title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
+  subtitle: '' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
+menu:
+  website: '[官网](https://www.roidmc.com)'
+  bbs: '[社区](https://bbs.roidmc.com)'
+  wiki: '[Wiki](/)'
+  status: '[状态监控](https://status.roidmc.com)'
+  support: '[帮助中心](https://support.roidmc.com)' 
+######## Main ########
+# 站点主结构树
+site_tree:
+  # 主页配置
+  home:
+    sidebar: search, welcome, recent, timeline
 
 #文章设置
 article:
   # 如果没有指定封面，是否根据 tags 作为关键词搜索封面？
   auto_cover: false # search from https://source.unsplash.com/
+  # 封面图宽高比
+  cover_ratio: 2.4
+  # 如果没有指定横幅，是否根据 tags 作为关键词搜索横幅图片？
+  auto_banner: false # search from https://source.unsplash.com/
   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
   auto_excerpt: 200
   # 分类颜色
@@ -59,13 +70,14 @@ footer:
        - '[分类](/categories)'
        - '[标签](/tags)'
        - '[归档](/archives)'
-     #'相关站点':
-     #  - '[RoidMC官网](https://www.roidmc.com)'
-     #  - '[BBS论坛](https://bbs.roidmc.com)'
-     #  - '[建议反馈](https://feedback.roidmc.com)'
-     #  - '[状态监控](https://status.roidmc.com)'
-     #'友情链接':
-     #  - '[申请友链](https://www.roidmc.com/contact-us)'
+     '相关站点':
+       - '[RoidMC官网](https://www.roidmc.com)'
+       - '[官方社区](https://bbs.roidmc.com)'
+       - '[建议反馈](https://feedback.roidmc.com)'
+       - '[状态监控](https://status.roidmc.com)'
+     '友情链接':
+       - '[申请友链](https://www.roidmc.com/contact-us)'
+       - '[赞助我们](https://www.roidmc.com/donate)'
   content: | # 支持 Markdown 格式
     本站点所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
     本站由 [RoidMC Studios](/) 使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 主题创建，您可在 [Github](https://github.com/roidmc/wiki) 上找到本站源码。

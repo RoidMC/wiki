@@ -44,7 +44,7 @@ const util = {
       el.select();
       document.execCommand("Copy");
       if (msg && msg.length > 0) {
-        hud.toast(msg);
+        hud.toast(msg, 2500);
       }
     }
   },
@@ -59,17 +59,15 @@ const util = {
 
 const hud = {
   toast: (msg, duration) => {
-    duration = isNaN(duration) ? 2000 : duration;
+    const d = Number(isNaN(duration) ? 2000 : duration);
     var el = document.createElement('div');
     el.classList.add('toast');
+    el.classList.add('show');
     el.innerHTML = msg;
     document.body.appendChild(el);
-    setTimeout(function () {
-      var d = 0.5;
-      el.style.webkitTransition = '-webkit-transform ' + d + 's ease-in, opacity ' + d + 's ease-in';
-      el.style.opacity = '0';
-      setTimeout(function () { document.body.removeChild(el) }, d * 1000);
-    }, duration);
+
+    setTimeout(function(){ document.body.removeChild(el) }, d);
+    
   },
 
 }
@@ -244,9 +242,12 @@ if (stellar.plugins.stellar) {
       const els = document.getElementsByClassName('stellar-' + key + '-api');
       if (els != undefined && els.length > 0) {
         stellar.jQuery(() => {
-          stellar.loadScript(js, { defer: true });
-          if (key == 'timeline' || 'memos') {
-            stellar.loadScript(stellar.plugins.marked);
+          if (key == 'timeline' || 'memos' || 'marked') {
+            stellar.loadScript(stellar.plugins.marked).then(function () {
+              stellar.loadScript(js, { defer: true });
+            });
+          } else {
+            stellar.loadScript(js, { defer: true });
           }
         })
       }
@@ -323,7 +324,6 @@ if (stellar.plugins.fancybox) {
   var needFancybox = document.querySelectorAll(selector).length !== 0;
   if (!needFancybox) {
     const els = document.getElementsByClassName('stellar-memos-api');
-    console.log('els', els);
     if (els != undefined && els.length > 0) {
       needFancybox = true;
     }
@@ -362,7 +362,7 @@ if (stellar.search.service) {
           }
           path = stellar.config.root + path;
           const filter = $inputArea.attr('data-filter') || '';
-          searchFunc(path, filter, 'search-input', 'search-result');
+          searchFunc(path, filter, 'search-wrapper', 'search-input', 'search-result');
         });
         $inputArea.keydown(function(e) {
           if (e.which == 13) {
