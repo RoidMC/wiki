@@ -89,4 +89,11 @@ search:
     field: post # post, page, all
     path: /search.json # 搜索文件存放位置
     content: true # 是否搜索内容
-  
+
+# 自定义Style
+style:
+  font-family:
+    logo: 'HarmonyOS_Regular'
+    body: 'HarmonyOS_Regular'
+    code: 'HarmonyOS_Regular'
+    codeblock: 'HarmonyOS_Regular'

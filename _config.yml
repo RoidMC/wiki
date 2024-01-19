@@ -141,5 +141,7 @@ neat_js:
 # Inject file
 inject:
   head:
+    - <link href="/wiki-assets/static/css/custom-style.css" rel="stylesheet">
+    - <link href="/wiki-assets/static/css/fonts.css" rel="stylesheet">
     - <script src="/wiki-assets/static/js/wiki-version.js"></script>
   script: ''
