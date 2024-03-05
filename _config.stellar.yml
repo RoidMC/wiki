@@ -13,13 +13,6 @@ logo:
   title: '[{config.title}](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   subtitle: '{config.subtitle}' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
 
-menu:
-  website: '[官网](https://www.roidmc.com)'
-  bbs: '[社区](https://bbs.roidmc.com)'
-  wiki: '[Wiki](/)'
-  status: '[状态监控](https://status.roidmc.com)'
-  support: '[帮助中心](https://support.roidmc.com)' 
-
 # 侧边栏主功能导航菜单
 menubar:
   columns: 5 # 一行多少个
@@ -54,7 +47,6 @@ menubar:
        icon: '<img src="/wiki-assets/icon/headset-support.svg"/>'
        title: 帮助中心
        url: 'https://support.roidmc.com'
-
 
 ######## Main ########
 # 站点主结构树
