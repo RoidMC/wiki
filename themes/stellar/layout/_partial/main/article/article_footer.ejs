@@ -14,7 +14,7 @@ function layoutDiv() {
   if (item.length === 0) {
     return el;
   }
-  el += '<div class="article-footer reveal fs14">';
+  el += `<div class="article-footer${scrollreveal(' ')} fs14">`
   if (page.references?.length > 0) {
     function refList() {
       var el = '';
@@ -39,7 +39,7 @@ function layoutDiv() {
 
   var license = ''
   if (page.wiki) {
-    let proj = theme.wiki.tree[page.wiki]
+    const proj = theme.wiki.tree[page.wiki]
     if (page.license != null) {
       license = page.license || theme.article.license
     } else if (proj?.license != null) {
@@ -64,7 +64,7 @@ function layoutDiv() {
       }
     }
     if (author) {
-      license = license.replace('${author.name}', author.name).replace('${author.url}', author.url)
+      license = license.replace('{author.name}', author.name).replace('{author.url}', author.url)
     }
     el += `
     <section id="license">
@@ -76,7 +76,7 @@ function layoutDiv() {
 
   var showSharePlugin = false
   if (page.wiki) {
-    let proj = theme.wiki.tree[page.wiki]
+    const proj = theme.wiki.tree[page.wiki]
     if (page.share != null) {
       showSharePlugin = page.share == true
     } else if (proj != null) {
@@ -98,30 +98,22 @@ function layoutDiv() {
             el += ' onclick="util.toggle(&quot;qrcode-wechat&quot)"';
           } else if (item == 'weibo') {
             el += ' href="https://service.weibo.com/share/share.php?url=' + page.permalink;
-            el += '&title=' + (page.seo_title || (page.title + ' - ' + config.title));
+            el += '&title=' + page.title + ' - ' + config.title;
             if (page.layout == 'post' && page.cover) {
               el += '&pics=' + page.cover;
-            } else if (page.layout == 'wiki' && page.icon) {
+            } else if (page.wiki && page.icon) {
               el += '&pics=' + page.icon;
             }
             el += '&summary=' + truncate(page.description || strip_html(page.excerpt || page.content), {length: 120});
             el += '"';
           } else if (item == 'email') {
-            el += ' href="mailto:?subject=' + ((page.title + ' - ' + config.title) || page.seo_title) + '&amp;'
+            el += ' href="mailto:?subject=' + page.title + ' - ' + config.title + '&amp;'
             el += 'body=' + page.permalink + '"';
           } else if (item == 'link') {
             el += ' onclick="util.copy(&quot;copy-link&quot;, &quot;' + __('message.copied') + '&quot;)"';
           }
           el += '>';
-          if (item == 'wechat') {
-            el += '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg"/>';
-          } else if (item == 'weibo') {
-            el += '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg"/>';
-          } else if (item == 'email') {
-            el += '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg"/>';
-          } else if (item == 'link') {
-            el += '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg"/>';
-          }
+          el += icon(`share:${item}`)
           el += '</a>';
         }
       });
@@ -130,7 +122,7 @@ function layoutDiv() {
     function qrcode() {
       if (theme.article.share.includes('wechat')) {
         return `
-        <div class="qrcode" id="qrcode-wechat" style="visibility:hidden;height:0">
+        <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
           <img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=${page.permalink}"/>
         </div>
         `
