@@ -1,23 +1,61 @@
 ######## Stellar info ########
 stellar:
-  version: '1.25.0'
+  version: '1.27.0'
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
-  cdn_css: # Use cdn links instead of /css/main.css
-  cdn_js: # Use cdn links instead of /js/main.js
+  main_css: /css/main.css
+  main_js: /js/main.js
   
 # 侧边栏设置
 # 左上角显示的 logo 区域，包含图标、大标题、副标题
 logo:
-  avatar: '[config.avatar](/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
-  title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
-  subtitle: '' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
+  avatar: '[{config.avatar}](/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+  title: '[{config.title}](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
+  subtitle: '{config.subtitle}' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
+
 menu:
   website: '[官网](https://www.roidmc.com)'
   bbs: '[社区](https://bbs.roidmc.com)'
   wiki: '[Wiki](/)'
   status: '[状态监控](https://status.roidmc.com)'
   support: '[帮助中心](https://support.roidmc.com)' 
+
+# 侧边栏主功能导航菜单
+menubar:
+  columns: 5 # 一行多少个
+  items: # 可按照自己需求增加，符合以下格式即可
+    # id: 页面中高亮的 menu_id 
+    # theme: 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
+    # icon: 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+    # title: 标题
+    # url: 点击跳转到哪，支持相对路径和绝对路径
+     - id: RoidMC OFWebsite
+       theme: '#1BCDFC'
+       icon: '<img src="/wiki-assets/icon/planet-earth.svg"/>'
+       title: 官网
+       url: 'https://www.roidmc.com'
+     - id: Community
+       theme: '#3DC550'
+       icon: '<img src="/wiki-assets/icon/communication.svg"/>'
+       title: 玩家社区
+       url: 'https://bbs.roidmc.com'
+     - id: Wiki
+       theme: '#3DC550'
+       icon: '<img src="/wiki-assets/icon/book.svg"/>'
+       title: WIKI
+       url: /
+     - id: RoidMC Status
+       theme: '#F44336'
+       icon: '<img src="/wiki-assets/icon/server.svg"/>'
+       title: 状态监控
+       url: 'https://status.roidmc.com'
+     - id: Support
+       theme: '#F44336'
+       icon: '<img src="/wiki-assets/icon/headset-support.svg"/>'
+       title: 帮助中心
+       url: 'https://support.roidmc.com'
+
+
 ######## Main ########
 # 站点主结构树
 site_tree:
@@ -55,12 +93,15 @@ footer:
      qq:
        icon: '<img src="/wiki-assets/icon/qq-color.svg"/>'
        url: https://rmc.ink/social/qq
+     qqchannel:
+       icon: '<img src="/wiki-assets/icon/topic-discussion.svg"/>'
+       url: https://rmc.ink/social/qqchannel
      github:
        icon: '<img src="/wiki-assets/icon/github-octocat.svg"/>'
        url: https://github.com/roidmc
-     discord:
-       icon: '<img src="/wiki-assets/icon/discord-color.svg"/>'
-       url: https://rmc.ink/social/discord
+     #discord:
+     #  icon: '<img src="/wiki-assets/icon/discord-color.svg"/>'
+     #  url: https://rmc.ink/social/discord
      email:
        icon: '<img src="/wiki-assets/icon/email-color.svg"/>'
        url: mailto:support@roidmc.com
