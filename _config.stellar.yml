@@ -31,17 +31,13 @@ menubar:
        theme: '#3DC550'
        icon: '<img src="/wiki-assets/icon/communication.svg"/>'
        title: 玩家社区
-       url: 'https://bbs.roidmc.com'
+       url: 'https://www.rmc.ink/community'
      - id: Wiki
        theme: '#3DC550'
        icon: '<img src="/wiki-assets/icon/book.svg"/>'
        title: WIKI
        url: /
-     - id: RoidMC Status
-       theme: '#F44336'
-       icon: '<img src="/wiki-assets/icon/server.svg"/>'
-       title: 状态监控
-       url: 'https://status.roidmc.com'
+    ## TODO
      - id: Support
        theme: '#F44336'
        icon: '<img src="/wiki-assets/icon/headset-support.svg"/>'
@@ -107,7 +103,7 @@ footer:
        - '[RoidMC官网](https://www.roidmc.com)'
        - '[用户中心](https://id.roidmc.com)'
        - '[帮助中心](https://support.roidmc.com)'
-       - '[状态监控](https://status.roidmc.com)'
+       #- '[状态监控](https://status.roidmc.com)'
      '玩家社区':
        - '[QQ群](https://rmc.ink/social/qq)'
        - '[QQ频道](https://rmc.ink/social/qqchannel)'

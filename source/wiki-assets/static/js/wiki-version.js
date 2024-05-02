@@ -29,7 +29,7 @@ var title1 = '✨ RoidMC Studios'
 var title2 = 'SUS ඞ'
 var content = `
 🏡 官网: https://www.roidmc.com
-🏡 社区: https://bbs.roidmc.com
+🏡 社区: https://www.rmc.ink/community
 🏡 Wiki: https://wiki.roidmc.com
 🔧 版本：RoidMC Wiki-0.0.4
 
