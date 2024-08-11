@@ -15,34 +15,38 @@ logo:
 
 # 侧边栏主功能导航菜单
 menubar:
-  columns: 5 # 一行多少个
+  columns: 4 # 一行多少个
   items: # 可按照自己需求增加，符合以下格式即可
     # id: 页面中高亮的 menu_id 
     # theme: 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
     # icon: 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
     # title: 标题
     # url: 点击跳转到哪，支持相对路径和绝对路径
-     - id: RoidMC OFWebsite
+     - id: RoidMC Website
        theme: '#1BCDFC'
-       icon: '<img src="/wiki-assets/icon/planet-earth.svg"/>'
+       icon: '<img src="https://api.iconify.design/twemoji:world-map.svg?color=%23ffffff"/>'
        title: 官网
        url: 'https://www.roidmc.com'
-     - id: Community
+     - id: UIAS
        theme: '#3DC550'
-       icon: '<img src="/wiki-assets/icon/communication.svg"/>'
-       title: 玩家社区
-       url: 'https://www.rmc.ink/community'
+       icon: '<img src="https://api.iconify.design/twemoji:locked-with-key.svg?color=%23ffffff"/>'
+       title: RoidMC UIAS
+       url: 'https://id.roidmc.com'
+     #- id: Community
+     #  theme: '#3DC550'
+     #  icon: '<img src="/wiki-assets/icon/communication.svg"/>'
+     #  title: 玩家社区
+     #  url: 'https://www.roidmc.com/join-us#community'
      - id: Wiki
        theme: '#3DC550'
-       icon: '<img src="/wiki-assets/icon/book.svg"/>'
+       icon: '<img src="https://api.iconify.design/twemoji:books.svg?color=%23ffffff"/>'
        title: WIKI
        url: /
-    ## TODO
      - id: Support
        theme: '#F44336'
-       icon: '<img src="/wiki-assets/icon/headset-support.svg"/>'
+       icon: '<img src="https://api.iconify.design/twemoji:radio.svg?color=%23ffffff"/>'
        title: 帮助中心
-       url: 'https://support.roidmc.com'
+       url: 'https://support.qq.com/products/351211/'
 
 ######## Main ########
 # 站点主结构树
@@ -103,7 +107,6 @@ footer:
        - '[RoidMC官网](https://www.roidmc.com)'
        - '[用户中心](https://id.roidmc.com)'
        - '[帮助中心](https://support.qq.com/products/351211/)'
-       #- '[状态监控](https://status.roidmc.com)'
      '玩家社区':
        - '[QQ群](https://rmc.ink/social/qq)'
        - '[QQ频道](https://rmc.ink/social/qqchannel)'
