@@ -85,6 +85,7 @@ export default defineConfig({
             }),
             starlightLinksValidator({
                 exclude: ['/docs','/wiki/intro','/en-us/docs','/en-us/wiki/intro'],
+                errorOnRelativeLinks: false,
             }),
             starlightImageZoom()
         ],
