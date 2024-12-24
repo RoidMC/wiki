@@ -56,3 +56,7 @@ jobs:
           single-commit: true
           branch: gh-pages
           folder: dist
+          clean: true
+          clean-exclude: |
+            CNAME
+            _astro/*
