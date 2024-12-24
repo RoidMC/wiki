@@ -1,0 +1,43 @@
+---
+title: 404 Not Found
+head:
+  - tag: title
+    content: 404 Not Found
+template: splash
+prev: false
+next: false
+hero:
+  title: |
+    <span class="hero-title">
+      404 Not Found
+    </span>
+  tagline: Oops, we couldn't find that page!
+  image:
+    file: ../../assets/imgs/utils/undraw_server_down.svg
+  actions:
+    - text: Home
+      link: /
+      icon: right-arrow
+---
+
+import { Card,CardGrid,LinkCard,LinkButton,Icon } from '@astrojs/starlight/components';
+
+<CardGrid>
+	<Card title="RoidMC Docs" icon="list-format">
+		> 里面包含了我们的一些常规文档，如更新日志等 :O
+    <LinkCard title="Let's Get Started 🪄" href="/docs" />
+	</Card>
+	<Card title="RoidMC Wiki" icon="list-format">
+		> 需要查看我们的Wiki内容？点此查看
+    <LinkCard title="Let's Get Started 🪄" href="/wiki/intro" />
+	</Card>
+</CardGrid>
+
+<div class="common-footer" style="padding-top: 3rem;">
+<LinkButton href="https://www.roidmc.com" variant="minimal" class="common-footer-link">
+  © RoidMC Studios
+</LinkButton>
+<LinkButton href="https://astro.build" variant="minimal" class="common-footer-link text-right">
+  Built With Astro
+</LinkButton>
+</div>

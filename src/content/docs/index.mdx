@@ -1,0 +1,42 @@
+---
+title: RoidMC Wiki
+head:
+  - tag: title
+    content: RoidMC Wiki
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  title: |
+    <span class="hero-title">
+      RoidMC Wiki
+    </span>
+
+  image:
+    file: ../../assets/imgs/utils/undraw_books.svg
+
+  actions:
+    - text: Docs
+      link: /docs
+      icon: right-arrow
+    - text: Wiki
+      link: /wiki/intro
+      icon: right-arrow
+
+---
+
+import { Card,CardGrid,LinkCard } from '@astrojs/starlight/components';
+
+<div class="wave"></div>
+
+## 探索Wiki
+
+<CardGrid>
+	<Card title="RoidMC Docs" icon="list-format">
+		> 里面包含了我们的一些常规文档，如更新日志等 :O
+    <LinkCard title="Let's Get Started 🪄" href="/docs" />
+	</Card>
+	<Card title="RoidMC Wiki" icon="list-format">
+		> 需要查看我们的Wiki内容？点此查看
+    <LinkCard title="Let's Get Started 🪄" href="/wiki/intro" />
+	</Card>
+</CardGrid>
