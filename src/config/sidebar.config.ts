@@ -24,7 +24,9 @@ export const sidebar_config =     [
     {
         label: 'Docs',
         items: [
-            { label: 'Docs', slug: 'docs' },
+            { slug: 'docs'},
+            { label: 'Docs-Intro', slug: 'docs'},
+            //{ label: 'Demo', slug: 'wiki/intro' },
         ],
     },
     {

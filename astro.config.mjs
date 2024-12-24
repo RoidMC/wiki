@@ -34,6 +34,11 @@ export default defineConfig({
                 attrs: {
                     src: "/wiki-assets/js/wiki-version.js"
                 },
+                tag: 'meta',
+                attrs: {
+                    name: 'keywords',
+                    content: 'RoidMC,RoidMC Studios'
+                }
             }
         ],
         defaultLocale: 'root',

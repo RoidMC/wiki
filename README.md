@@ -1,4 +1,4 @@
-# <img alt="RoidMC-Wiki" width="30" src="https://raw.githubusercontent.com/RoidMC/wiki/main/source/wiki-assets/logo.png" /> RoidMC Wiki
+# <img alt="RoidMC-Wiki" width="30" src="https://raw.githubusercontent.com/RoidMC/wiki/refs/heads/main/src/assets/imgs/logo/logo-big-r-text-RoundCorner.png" /> RoidMC Wiki
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](https://github.com/RoidMC/wiki/blob/main/LICENSE)
 [![Astro-Based](https://img.shields.io/badge/-astro-gray?style=flat-square&logo=Astro)](https://astro.build)
@@ -10,11 +10,7 @@
 * 同时Wiki内的文章等均采用[CC NC-BY-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)许可
 * 存储库采用[GPL-V3](https://github.com/RoidMC/wiki/blob/main/LICENSE)开源协议
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## 🚀 项目结构
 
 ```
 .
@@ -37,9 +33,9 @@ Images can be added to `src/assets/` and embedded in Markdown with a relative li
 
 Static assets, like favicons, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## 🧞 CLI命令
 
-All commands are run from the root of the project, from a terminal:
+我们使用`pnpm`作为包管理器，推荐您安装`pnpm`后进行操作:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -50,11 +46,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👀 文档资料
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
-
-
+- [Starlight文档](https://starlight.astro.build/)
+- [Astro文档](https://docs.astro.build)
 
 🎨  数据统计
 ---
