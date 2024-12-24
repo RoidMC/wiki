@@ -3,15 +3,16 @@ name: Wiki Delpoy
 # 触发条件: push到Main分支后自动触发
 on:
   push:
-    branches:
-      - main
-      - v2
+    branches: ["main"]
+  #pull_request:
+  #  branches: ["main","dev"]
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  build-astro-wiki:
+    if: contains(github.event.head_commit.message, '[actions skip]') == false
     name: Wiki Build & Delpoy
     # 使用最新版Ubuntu作为编译部署环境
     runs-on: ubuntu-latest
