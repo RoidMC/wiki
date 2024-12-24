@@ -45,18 +45,17 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "106982374+RoidMC-Bot@users.noreply.github.com"
           git config --global user.name "roidmc-bot"
-          npm install
-          npm run build
+          pnpm install
+          pnpm run build
 
       # 部署Astro至Github Pages   
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          git-config-name: "roidmc-bot"
+          git-config-email: "106982374+RoidMC-Bot@users.noreply.github.com"
           ssh-key: ${{ secrets.WIKI_DEPLOY_KEY }}
+          silent: true
           single-commit: true
           branch: gh-pages
           folder: dist
-          clean: true
-          clean-exclude: |
-            CNAME
-            _astro/*
