@@ -1,0 +1,58 @@
+name: Wiki Delpoy
+
+# 触发条件: push到Main分支后自动触发
+on:
+  push:
+    branches:
+      - main
+      - v2
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Wiki Build & Delpoy
+    # 使用最新版Ubuntu作为编译部署环境
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout codes
+        uses: actions/checkout@v4
+
+      # 设置Node.js环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 设置包缓存目录
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      # 配置Astro运行安装环境
+      - name: Setup Astro
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.WIKI_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 700 ~/.ssh
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email "106982374+RoidMC-Bot@users.noreply.github.com"
+          git config --global user.name "roidmc-bot"
+          npm install
+          npm run build
+
+      # 部署Astro至Github Pages   
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          ssh-key: ${{ secrets.WIKI_DEPLOY_KEY }}
+          single-commit: true
+          branch: gh-pages
+          folder: dist
