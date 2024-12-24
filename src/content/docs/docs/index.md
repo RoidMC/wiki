@@ -6,6 +6,10 @@ lastUpdated: 2024-12-24
 
 ## 欢迎使用RoidMC Docs
 
+:::danger[建设中]
+文档站目前处于开发阶段，还未完工，文档内容仅供参考
+:::
+
 ```bash title="前言"
 > 这里是新版RoidMC Wiki，此页面为我们托管的相关文档查阅入口
 > 如果你对我们的文档有什么好的改进意见，和反馈，可在此页面找到我们的联系方式
@@ -20,7 +24,7 @@ lastUpdated: 2024-12-24
 <details>
 <summary>RoidMC站点</summary>
 
-- [RoidMC官网](https://roidmc.com)
+- [RoidMC官网](https://www.roidmc.com)
 - [RoidMC用户中心](https://id.roidmc.com)
 - [帮助中心](https://support.qq.com/products/351211/)
 
@@ -30,8 +34,8 @@ lastUpdated: 2024-12-24
 <details>
 <summary>玩家社区</summary>
 
-- [QQ群](https://roidmc.com)
-- [QQ频道](https://id.roidmc.com)
+- [QQ群](https://rmc.ink/social/qq)
+- [QQ频道](https://rmc.ink/social/qqchannel)
 
 </details>
 
