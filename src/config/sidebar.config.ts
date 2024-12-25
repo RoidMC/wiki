@@ -1,6 +1,6 @@
 /*
 * RoidMC Wiki Project
-* Config File - Themes config (Sidebar Config)
+* Config File - Themes config (Starlight Sidebar Config)
 *
 * This source code is licensed under the GPL-3.0 license found in the
 * LICENSE file in the root directory of this source tree.
@@ -12,7 +12,7 @@
 * 2024 © RoidMC Studios
 */
 
-export const sidebar_config =     [
+export const sidebar_config = [
     {
         label: "leadingNavLinks",
         items: [

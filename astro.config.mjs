@@ -6,6 +6,7 @@ import starlight from "@astrojs/starlight";
 import sitemap from '@astrojs/sitemap';
 import starlightImageZoom from 'starlight-image-zoom'
 import { sidebar_config } from './src/config/sidebar.config.ts'
+import { head_config } from './src/config/head.config.ts' 
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,19 +29,7 @@ export default defineConfig({
             replacesTitle: true,
         },
         favicon: '/wiki-assets/favicon.ico',
-        head: [
-            {
-                tag: 'script',
-                attrs: {
-                    src: "/wiki-assets/js/wiki-version.js"
-                },
-                tag: 'meta',
-                attrs: {
-                    name: 'keywords',
-                    content: 'RoidMC,RoidMC Studios'
-                }
-            }
-        ],
+        head: head_config,
         defaultLocale: 'root',
         locales: {
 			root: {
@@ -57,18 +46,11 @@ export default defineConfig({
             github: 'https://github.com/RoidMC/wiki',
         },
         sidebar: sidebar_config,
+        lastUpdated: true,
         editLink: {
             baseUrl: 'https://github.com/roidmc/wiki/edit/main/',
             label: '在 GitHub 上编辑此页',
         },
-        lastUpdated: true,
-        expressiveCode: {
-            styleOverrides: { borderRadius: '6px' },
-          },
-        editLink: {
-            baseUrl: 'https://github.com/roidmc/wiki/edit/main/',
-          },
-        lastUpdated: true,
         expressiveCode: {
             styleOverrides: { borderRadius: '6px' },
           },
