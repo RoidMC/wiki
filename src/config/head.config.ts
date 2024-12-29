@@ -51,6 +51,14 @@ export const head_config = [
         `,
     },
     {
+        // 51LA Analytics
+        tag: 'script',
+        attrs: {
+            type: 'text/javascript',
+            src: 'https://js.users.51.la/21939415.js'
+        }
+    },
+    {
         // Keywords
         tag: 'meta',
         attrs: {

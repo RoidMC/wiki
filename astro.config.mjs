@@ -49,7 +49,6 @@ export default defineConfig({
         lastUpdated: true,
         editLink: {
             baseUrl: 'https://github.com/roidmc/wiki/edit/main/',
-            label: '在 GitHub 上编辑此页',
         },
         expressiveCode: {
             styleOverrides: { borderRadius: '6px' },
