@@ -17,6 +17,7 @@ export const sidebar_config = [
         label: 'Docs',
         items: [
             { slug: 'docs'},
+            { label: '📝 用户协议', collapsed: true, autogenerate: { directory: 'docs/terms' } }
             //{ label: 'Docs-Intro', slug: 'docs'},
         ],
     },
