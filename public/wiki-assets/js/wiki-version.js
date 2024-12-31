@@ -37,7 +37,7 @@ var content = `
 点该链接有惊喜 https://rmc.ink/funny 
 `
 var copyinfo = `
-2020 - 2024 © RoidMC Studios
+2020 - 2025 © RoidMC Studios
 Built With Astro & Starlight
 `
 

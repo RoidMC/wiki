@@ -14,37 +14,34 @@
 
 export const sidebar_config = [
     {
-        label: "leadingNavLinks",
-        items: [
-          { label: "Docs", link: "docs" },
-          { label: "Wiki", link: "wiki/intro" }
-        ]
-    },
-    
-    {
         label: 'Docs',
         items: [
             { slug: 'docs'},
-            { label: 'Docs-Intro', slug: 'docs'},
-            //{ label: 'Demo', slug: 'wiki/intro' },
+            //{ label: 'Docs-Intro', slug: 'docs'},
         ],
     },
     {
         label: 'Wiki',
         collapsed: true,
         items: [
+            { slug: 'wiki' },
             { 
                 label: '元梦地图FAQ',
                 badge: '元梦UGC',
                 collapsed: true,
                 items: [
-                    { 
-                        label: '悦动几何', autogenerate: { directory: 'wiki/dreamstar' }, 
-                        //label: '末世求生', autogenerate: { directory: 'wiki/dreamstar/the-crust' },  
-                    },
+                    { label: '更新日志', autogenerate: { directory: 'wiki/dreamstar/changelog' } },
+                    //{ label: '更新日志', autogenerate: { directory: 'wiki/dreamstar/changelog' } },
                 ]
             }
         ],
         //autogenerate: { directory: 'en-us' },
-    }, 
+    },
+    {
+        label: "leadingNavLinks",
+        items: [
+          { label: "Docs", link: "docs" },
+          { label: "Wiki", link: "wiki" }
+        ]
+    },
 ];

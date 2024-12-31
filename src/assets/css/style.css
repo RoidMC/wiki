@@ -70,6 +70,16 @@ main {
 	border-radius: 0 6px 6px 0;
 }
 
+.tab > [role="tab"][aria-selected="true"] {
+    font-weight: 600;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+    border-width: 2px;
+    border-color: var(--sl-color-text-accent);
+    color: var(--sl-color-white);
+  }
+
 .common-footer {
 	display: flex;
 	justify-content: space-between;

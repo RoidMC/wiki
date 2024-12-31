@@ -70,7 +70,7 @@ export default defineConfig({
                 }
             }),
             starlightLinksValidator({
-                exclude: ['/docs','/wiki/intro','/en-us/docs','/en-us/wiki/intro'],
+                exclude: ['/docs','/wiki','/en-us/docs','/en-us/wiki'],
                 errorOnRelativeLinks: false,
             }),
             starlightImageZoom()
