@@ -57,7 +57,7 @@ sidebar:
 <details>
 <summary>CSS库</summary>
 
-- [Animate.css](https://github.com/animate-css/animate.css/blob/main/LICENSE) - [License](https://github.com/animate-css/animate.css/blob/main/LICENSE)
+- [Animate.css](https://github.com/animate-css/animate.css) - [License](https://github.com/animate-css/animate.css/blob/main/LICENSE)
 - [Tailwind CSS](https://github.com/tailwindcss/tailwindcss) - [MIT](https://github.com/tailwindcss/tailwindcss/blob/master/LICENSE)
 
 </details>

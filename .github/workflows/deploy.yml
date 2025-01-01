@@ -56,7 +56,7 @@ jobs:
           git-config-name: "roidmc-bot"
           git-config-email: "106982374+RoidMC-Bot@users.noreply.github.com"
           ssh-key: ${{ secrets.WIKI_DEPLOY_KEY }}
-          silent: true
+          #silent: true
           single-commit: true
           branch: gh-pages
           folder: dist
