@@ -2,8 +2,6 @@
 title: 📝 隐私协议
 description: RoidMC Docs | Privacy Policy
 sidebar:
-  # 为链接设置自定义标签
-  label: 📝 隐私协议
   # 为链接设置自定义顺序（数字越小显示在上方）
   order: 2
 ---
