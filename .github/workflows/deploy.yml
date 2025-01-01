@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout codes
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # 设置Node.js环境
       - name: Setup Node.js
