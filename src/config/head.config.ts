@@ -17,6 +17,7 @@ export const head_config = [
         // Wiki Version (Console Log Eggs :D)
         tag: 'script',
         attrs: {
+            async: true,
             src: "/wiki-assets/js/wiki-version.js"
         },
     },
@@ -55,7 +56,40 @@ export const head_config = [
         tag: 'script',
         attrs: {
             type: 'text/javascript',
+            async: true,
             src: 'https://js.users.51.la/21939415.js'
+        }
+    },
+        // CSS Libs
+    {
+        tag: 'link',
+        attrs: {
+            rel: 'stylesheet',
+            href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/animate.css/4.1.1/animate.min.css'
+        }
+    },
+    {
+        tag: 'link',
+        attrs: {
+            rel: 'stylesheet',
+            href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css'
+        }
+    },
+        // Prefetch Libs
+    {
+        tag: 'link',
+        attrs: {
+            rel: 'dns-prefetch',
+            as: 'style',
+            href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/animate.css/4.1.1/animate.min.css'
+        }
+    },
+    {
+        tag: 'link',
+        attrs: {
+            rel: 'dns-prefetch',
+            as: 'style',
+            href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css'
         }
     },
     {
