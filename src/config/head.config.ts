@@ -26,7 +26,7 @@ export const head_config = [
         tag: 'script',
         attrs: {
             async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id=G-T4Y5ZHGF31'
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-V59KNWGZS0'
         },
     },
     {
@@ -36,7 +36,7 @@ export const head_config = [
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-T4Y5ZHGF31');
+        gtag('config', 'G-V59KNWGZS0');
         `,
     },
     {
