@@ -7,10 +7,10 @@
 @use "./lib/tailwind.sass" as *;
 @use "./themes/fonts.scss" as *;
 @use "./themes/base-themes.scss" as *;
-@use "./themes/custom-animate.sass" as *;
+@use "./themes/custom-animate.scss" as *;
 @use "./themes/custom-color-palette.scss" as *;
 @use "./modules/wave.scss" as *;
-@use "./modules/hero.sass" as *;
+@use "./modules/hero.scss" as *;
 
 html,body,div,span,code {
 	@include mcx_base_font_family ('HarmonyOS_Regular','true');
