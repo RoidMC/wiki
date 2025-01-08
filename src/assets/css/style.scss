@@ -6,25 +6,18 @@
 */
 @use "./lib/tailwind.sass" as *;
 @use "./themes/fonts.scss" as *;
+@use "./themes/base-themes.scss" as *;
 @use "./themes/custom-animate.sass" as *;
 @use "./themes/custom-color-palette.scss" as *;
 @use "./modules/wave.scss" as *;
 @use "./modules/hero.sass" as *;
 
 html,body,div,span,code {
-	font-family: 'HarmonyOS_Regular' !important;
+	@include mcx_base_font_family ('HarmonyOS_Regular','true');
 }
 
 .page{
-	background-image: url("../../assets/imgs/utils/bg.svg");
-	background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    /*background-color: initial;*/
+	@include mcx_base_image (url("../../assets/imgs/utils/bg.svg"),'cenetr','cenetr','cover','no-repeat','initial','initial','initial','');
 }
 
 main {
@@ -35,35 +28,15 @@ main {
 	border-bottom: 0;
 }
 
-.common-bg {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-	top: 0;
-	z-index: -2;
-	background-image: url("../../assets/imgs/bg.svg");
-	background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-}
-
 .sl-link-button {
 	border-radius: 18px;
-}
-
-.sl-link-button.primary {
-	box-shadow:  0 0 6px 4px var(--sl-color-gray-5);
-}
-
-.sl-link-button:hover {
-	animation: pulse;
-	animation-duration: 0.8s;
+	&.primary {
+	    box-shadow:  0 0 6px 4px var(--sl-color-gray-5);
+	}
+	&:hover {
+		animation: pulse;
+		animation-duration: 0.8s;
+	}
 }
 
 .starlight-aside {
@@ -80,41 +53,52 @@ main {
     color: var(--sl-color-white);
   }
 
-.common-footer {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	position: relative;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
-	animation: none;
-}
-
-.common-footer-info-left {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	animation: fadeInLeft;
-	animation-duration: 2s;
-	float: left;
-	line-height: 0;
-}
-
-.common-footer-info-right{
-	display: flex;
-	flex-direction: column;	
-	align-items: flex-end;
-	animation: fadeInRight;
-	animation-duration: 2s;
-	float: right;
-	line-height: 0;
-}
-
-.common-footer-link {
-	padding: 0 0 0 0 !important;
-	margin: 0 0 0 0 !important;
-	margin-block: 0 !important;
-	font-size: 12px !important;
+.common {
+	// Unused
+	&-bg {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -2;
+		@include mcx_base_image (url("../../assets/imgs/utils/bg.svg"),'cenetr','cenetr','cover','no-repeat','initial','initial','initial','');
+	}
+	&-footer {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		position: relative;
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+		animation: none;
+		&-info {
+			&-base {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				line-height: 0;
+			}
+			&-left {
+				@extend .common-footer-info-base;
+				animation: fadeInLeft;
+				animation-duration: 2s;
+				float: left;
+			}
+			&-right{
+				@extend .common-footer-info-base;
+				animation: fadeInRight;
+				animation-duration: 2s;
+				float: right;
+			}
+		}
+		&-link {
+			padding: 0 0 0 0 !important;
+			margin: 0 0 0 0 !important;
+			margin-block: 0 !important;
+			font-size: 12px !important;
+		}
+	}
 }
 
 

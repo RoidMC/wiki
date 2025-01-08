@@ -1,0 +1,20 @@
+// Mixin
+@mixin mcx_base_font_family($font_family,$force_mode) {
+    font-family: $font_family;
+    @if $force_mode == 'true' {
+        font-family: $font_family !important
+    }
+}
+
+// Image Mixin
+@mixin mcx_base_image($img_url,$img_pos_x,$img_pos_y,$img_size,$img_repeat,$img_attach,$img_origin,$img_clip,$img_bg_color) {
+    background-image: $img_url;
+	background-position-x: $img_pos_x;
+    background-position-y: $img_pos_y;
+    background-size: $img_size;
+    background-repeat: $img_repeat;
+    background-attachment: $img_attach;
+    background-origin: $img_origin;
+    background-clip: $img_clip;
+    background-color: $img_bg_color;
+}
