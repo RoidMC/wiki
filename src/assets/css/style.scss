@@ -2,13 +2,14 @@
 *  RoidMC Wiki - CSS
 *  RoidMC Wiki Common Style CSS File
 *  Custom Style
+*  Todo: 样式迁移至Scss/Sass写法，使用Mixin等优化代码
 */
-@import url('./lib/tailwind.css');
-@import url('./themes/fonts.css');
-@import url('./themes/custom-animate.css');
-@import url('./themes/custom-color-palette.css');
-@import url('./modules/wave.css');
-@import url('./modules/hero.css');
+@use "./lib/tailwind.sass" as *;
+@use "./themes/fonts.scss" as *;
+@use "./themes/custom-animate.sass" as *;
+@use "./themes/custom-color-palette.scss" as *;
+@use "./modules/wave.scss" as *;
+@use "./modules/hero.sass" as *;
 
 html,body,div,span,code {
 	font-family: 'HarmonyOS_Regular' !important;
@@ -135,8 +136,3 @@ main {
 	width: 4px;
 	height: 8px;
   }
-
-:root {
-    --cursor-x: 0;
-    --cursor-y: 0;
-}

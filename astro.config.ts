@@ -54,7 +54,7 @@ export default defineConfig({
             styleOverrides: { borderRadius: '6px' },
           },
         customCss: [
-            './src/assets/css/style.css'
+            './src/assets/css/style.scss'
         ],
         components: {
             ContentPanel: './src/components/rmc-custom/content-panel.astro',
