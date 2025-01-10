@@ -17,7 +17,7 @@ html,body,div,span,code {
 }
 
 .page{
-	@include mcx_base_image (url("../../assets/imgs/utils/bg.svg"),'cenetr','cenetr','cover','no-repeat','initial','initial','initial','');
+	@include mcx_base_image (url("../../assets/imgs/utils/bg.svg"),center,center,cover,no-repeat,initial,initial,initial,none);
 }
 
 main {
@@ -62,7 +62,7 @@ main {
 		left: 0;
 		top: 0;
 		z-index: -2;
-		@include mcx_base_image (url("../../assets/imgs/utils/bg.svg"),'cenetr','cenetr','cover','no-repeat','initial','initial','initial','');
+		@include mcx_base_image (url("../../assets/imgs/utils/bg.svg"),center,center,cover,no-repeat,initial,initial,initial,none);
 	}
 	&-footer {
 		display: flex;
