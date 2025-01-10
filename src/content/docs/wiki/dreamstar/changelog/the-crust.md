@@ -1,9 +1,7 @@
 ---
 date: 2024-11-29
 title: 末世求生-更新公告
-description: A reference page in my new Starlight docs site.
-categories: [元梦地图更新公告]
-tags: [元梦地图,元梦地图更新公告]
+description: RoidMC Wiki | TheCrust末世求生更新日志
 ---
 
 # 更新日志
@@ -14,10 +12,6 @@ tags: [元梦地图,元梦地图更新公告]
 
 ## 目录
 
-<!--1. [🌐 Switch Languages / 切换语言](#CataLogs-Swlang)
-2. [💬 Join the Community / 加入我们](#CataLogs-Join-the-community)
-3. [🔖 Version history / 历史版本](#CataLogs-Version-history)-->
-
 1. [🔖 末世求生-兽潮来袭](#CataLogs-TheCrust-EP1)
 2. [🔖 末世求生-危险地带](#CataLogs-TheCrust-EP2)
 
@@ -26,7 +20,7 @@ tags: [元梦地图,元梦地图更新公告]
 
 ## [末世求生-兽潮来袭 V1.2]() - 2024-10-9
 
-### ⚙️ 功能更新
+### ✨ 新内容
 - 启用LiftX UI V2
 
 ## [末世求生-兽潮来袭 V1.1a]() - 2024-10-8
@@ -37,7 +31,7 @@ tags: [元梦地图,元梦地图更新公告]
 
 ## [末世求生-兽潮来袭 V1.1]() - 2024-10-3
 
-### ⚙️ 内容更新
+### ✨ 新内容
 - 启用新版LiftX UI
 - 新增头像显示等功能
 

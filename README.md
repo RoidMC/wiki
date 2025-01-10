@@ -60,3 +60,9 @@ Static assets, like favicons, can be placed in the `public/` directory.
 [![Pull-pr-closed](https://img.shields.io/github/issues-pr-closed/RoidMC/wiki?style=flat-square)](https://github.com/RoidMC/wiki/pulls?q=is%3Apr+is%3Aclosed)
 
 2020 - 2025 © [RoidMC Studios](https://www.roidmc.com) 
+
+<!-- 
+Bro不想自己动手翻译，Wiki内的英文内容就请了Deepl大仙助力
+如果你看到了这个注释，为何不试试访问https://rmc.ink/funny
+里面真的不是RickRollllllll ;P
+ -->

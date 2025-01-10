@@ -1,61 +1,50 @@
 ---
 date: 2024-11-29
-title: 悦动几何-更新公告
-description: A reference page in my new Starlight docs site.
-categories: [元梦地图更新公告]
-tags: [元梦地图,元梦地图更新公告]
-sidebar:
-  # 为链接设置自定义标签
-  label: 悦动几何-更新公告
-  # 为链接设置自定义顺序（数字越小显示在上方）
-  order: 2
-  # 为链接添加徽章
-  badge:
-    text: New
-    variant: tip
+title: GeoRising Changelog
+description: RoidMC Wiki | GeoRising Changelog
 ---
 
-# 更新日志
-本项目所有值得注意的变化都将会记录在这个文件中
+# Changelog
+All notable changes to this project will be documented in this file.
 
-摘要：该文档的格式基于[Keep a Changelog](https://keepachangelog.com/en/1.0.0/)二次修改
-并且本项目遵守[Semantic Versioning](https://semver.org/spec/v2.0.0.html)并在主要版本前加上上游的主要版本号
+Note: The format of this document is based on the [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) second revision,
+and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and prefixes the major version with the upstream major version number.
 
-## 目录
+## Catalogs
 
-1. [🔖 悦动几何](#CataLogs-GeoRising-V1)
+1. [🔖 GeoRising V1](#CataLogs-GeoRising-V1)
 
 
-## <a id="CataLogs-GeoRising-V1"></a>🔖 悦动几何
+## <a id="CataLogs-GeoRising-V1"></a>🔖 GeoRising V1
 
-## [悦动几何 V1.2.2 - Pre Alpha 4]() - 2024-12-2
+## [GeoRising V1.2.2 - Pre Alpha 4]() - 2024-12-2
 
-### ⚙️ BUG修复
-- 修复卡牌系统显示卡牌与实际购买卡牌不同的问题
-- 修复开始游戏后存在不应该存在的敌人的问题
-- 修复子弹发射可能会被自锁死无法发射的问题
+### ⚙️ Fixes
+- Fix an issue where the cards shown in the card system were different from the actual cards purchased
+- Fixed an issue where enemies were not supposed to be present after starting the game.
+- Fixed bullet launching may be self-locking
 
-## [悦动几何 V1.2.0 - Pre Alpha 3]() - 2024-11-30
+### [GeoRising V1.2.0 - Pre Alpha 3]() - 2024-11-30
 
-### ⚙️ BUG修复
-- 修复Init载入阶段有概率加载失败的问题
-- 修复开火按钮透明度
-- 修复敌人生成
-- 修复远程敌人攻击行为
-- 修复敌人子弹在场景内无法清除的问题
-- 修复生物AI寻路检测
+### ⚙️ Fixes
+- Fixed Init loading phase may fail to load
+- Fixed fire button transparency
+- Fixed enemy generation
+- Fixed remote enemy attack behavior
+- Fixed enemy bullets not clearing in the scene
+- Fixed creature AI pathfinding detection
 
-## [悦动几何 V1.1.0 - Pre Alpha 2]() - 2024-11-29
+## [GeoRising V1.1.0 - Pre Alpha 2]() - 2024-11-29
 
-### ✨ 新内容
-- 添加选卡暂停（仅限单人）
-- 添加升级自动弹出选卡界面（可在游戏设置开关）
-- 添加击杀金币奖励
+### ✨ Added
+- Added card selection pause (single player only)
+- Added automatic card selection popup for upgrades (can be switched on/off in game settings)
+- Added Gold Bonus for kills
 
-## [悦动几何 V1.0.0 - Pre Alpha]() - 2024-11-29
+## [GeoRising V1.0.0 - Pre Alpha] () - 2024-11-29
 
-### ✨ 新内容
+### ✨ Added
 - LiftX UI V3
 
-### ⚙️ 功能更新
-- Alpha版本上线
+### ⚙️ Changed
+- Alpha version is live!

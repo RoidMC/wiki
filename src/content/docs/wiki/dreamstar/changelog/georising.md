@@ -1,18 +1,7 @@
 ---
 date: 2024-11-29
 title: 悦动几何-更新公告
-description: A reference page in my new Starlight docs site.
-categories: [元梦地图更新公告]
-tags: [元梦地图,元梦地图更新公告]
-sidebar:
-  # 为链接设置自定义标签
-  label: 悦动几何-更新公告
-  # 为链接设置自定义顺序（数字越小显示在上方）
-  order: 1
-  # 为链接添加徽章
-  badge:
-    text: New
-    variant: tip
+description: RoidMC Wiki | GeoRising悦动几何更新日志
 ---
 
 # 更新日志
