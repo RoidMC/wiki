@@ -66,9 +66,9 @@ Please refer to the list of third-party resources for details
 <details>
 <summary>Fonts</summary>
 
-- [HarmonyOS Sans]
-- [字体圈欣意冠黑体]
-- [Lovelo Line Bold]
+- [HarmonyOS Sans] - [Font Info](https://www.hellofont.cn/font-detail?fontid=8738)
+- [字体圈欣意冠黑体] - [Font Info](https://www.hellofont.cn/font-detail?fontid=8174)
+- [Lovelo Line Bold] - [Font Info](https://www.hellofont.cn/font-detail?fontid=8347)
 
 </details>
 

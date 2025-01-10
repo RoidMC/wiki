@@ -65,9 +65,9 @@ sidebar:
 <details>
 <summary>字体</summary>
 
-- [HarmonyOS Sans]
-- [字体圈欣意冠黑体]
-- [Lovelo Line Bold]
+- [HarmonyOS Sans] - [字体信息](https://www.hellofont.cn/font-detail?fontid=8738)
+- [字体圈欣意冠黑体] - [字体信息](https://www.hellofont.cn/font-detail?fontid=8174)
+- [Lovelo Line Bold] - [字体信息](https://www.hellofont.cn/font-detail?fontid=8347)
 
 </details>
 
