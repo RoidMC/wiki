@@ -1,6 +1,6 @@
 ---
-title: 📝 OSC License
-description: RoidMC Docs | OSC License
+title: 📝 Project License
+description: RoidMC Docs | Project License
 sidebar:
   # 为链接设置自定义顺序（数字越小显示在上方）
   order: 4
@@ -31,6 +31,15 @@ sidebar:
 <summary>UI/UX</summary>
 
 - UniX UI - [HarmonyOS Sans] / [Google Material Icons]
+
+</details>
+
+<details>
+<summary>Art Resources</summary>
+
+- You do not have the right to use resources associated with RoidMC Studios without authorization
+- For third-party resources within the images, please follow the specifications of the copyright holder and their license agreement, and we will only use their assets to the extent specified, and we will specifically label them as such
+- Let's Go related content, we will comply with the [Agreement](https://ymzx.qq.com/cp/web20240319/index.shtml) and use the content within the scope of the regulations
 
 </details>
 
