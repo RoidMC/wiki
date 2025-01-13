@@ -1,17 +1,21 @@
-/*
-* RoidMC Wiki Project
-* Config File - Themes config (Starlight Sidebar Config)
-*
-* This source code is licensed under the GPL-3.0 license found in the
-* LICENSE file in the root directory of this source tree.
-* If you need to distribute relevant code, please strictly comply with the relevant regulations of the open source license.
-*
-* Website: https://www.roidmc.com
-* Github: https://github.com/RoidMC
-* 
-* 2024 © RoidMC Studios
-*/
+/**
+ * RoidMC Wiki Project
+ * Config File - Themes config (Starlight Sidebar Config)
+ *
+ * This source code is licensed under the GPL-3.0 license found in the
+ * LICENSE file in the root directory of this source tree.
+ * If you need to distribute relevant code, please strictly comply with the relevant regulations of the open source license.
+ *
+ * Website: https://www.roidmc.com
+ * Github: https://github.com/RoidMC
+ * 
+ * 2024 © RoidMC Studios
+ */
 
+/**
+ * Sidebar数组配置定义
+ * Sidebar array configuration definition
+ */
 export const sidebar_config = [
     {
         label: 'Docs',
@@ -27,12 +31,13 @@ export const sidebar_config = [
         items: [
             { slug: 'wiki' },
             { 
-                label: '元梦地图FAQ',
-                badge: '元梦UGC',
+                label: '元梦地图 UGC',
+                translations:{ 'en-US':"Let's Go UGC" },
+                badge: 'FAQ',
                 collapsed: true,
                 items: [
-                    { label: '更新日志', autogenerate: { directory: 'wiki/dreamstar/changelog' } },
-                    //{ label: '更新日志', autogenerate: { directory: 'wiki/dreamstar/changelog' } },
+                    { label: '🕹️ 游戏项目', translations:{ 'en-US':'🕹️ Games' }, autogenerate: { directory: 'wiki/dreamstar/games' } },
+                    { label: '🛠️ 更新日志', translations:{ 'en-US':'🛠️ ChangeLog' }, autogenerate: { directory: 'wiki/dreamstar/changelog' } },
                 ]
             }
         ],

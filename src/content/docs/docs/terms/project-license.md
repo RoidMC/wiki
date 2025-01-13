@@ -1,6 +1,6 @@
 ---
-title: 📝 开源许可
-description: RoidMC Docs | OSC License
+title: 📝 项目许可证
+description: RoidMC Docs | Project License
 sidebar:
   # 为链接设置自定义顺序（数字越小显示在上方）
   order: 4
@@ -31,6 +31,15 @@ sidebar:
 <summary>UI/UX</summary>
 
 - UniX UI - [HarmonyOS Sans] / [Google Material Icons]
+
+</details>
+
+<details>
+<summary>美术资源</summary>
+
+- 未经授权您无权使用版权所有者为RoidMC Studios相关的资源
+- 对于图片内的第三方资源，请遵守版权方和其的许可协议规范，我们仅在规定范围内使用它们的资产，同时我们会特别标注
+- 元梦之星相关内容，我们将遵守[协议](https://ymzx.qq.com/cp/web20240319/index.shtml)，并在规定范围内使用内容
 
 </details>
 
@@ -72,7 +81,6 @@ sidebar:
 </details>
 
 :::
-
 
 <!-- 链接列表 -->
 [Google Material Icons]: https://github.com/google/material-design-icons

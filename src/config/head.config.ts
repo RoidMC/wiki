@@ -1,18 +1,32 @@
-/*
-* RoidMC Wiki Project
-* Config File - Themes config (Starlight Head Config)
-*
-* This source code is licensed under the GPL-3.0 license found in the
-* LICENSE file in the root directory of this source tree.
-* If you need to distribute relevant code, please strictly comply with the relevant regulations of the open source license.
-*
-* Website: https://www.roidmc.com
-* Github: https://github.com/RoidMC
-* 
-* 2024 © RoidMC Studios
-*/
+/**
+ * RoidMC Wiki Project
+ * Config File - Themes config (Starlight Head Config)
+ *
+ * This source code is licensed under the GPL-3.0 license found in the
+ * LICENSE file in the root directory of this source tree.
+ * If you need to distribute relevant code, please strictly comply with the relevant regulations of the open source license.
+ *
+ * Website: https://www.roidmc.com
+ * Github: https://github.com/RoidMC
+ * 
+ * 2024 © RoidMC Studios
+ */
 
-export const head_config = [
+/**
+ * 添加类型定义，确保TypeScript知道它是什么
+ * Add type definitions to ensure TypeScript knows what it is
+ */
+type HeadConfigItem = {
+    tag: 'script' | 'link' | 'style' | 'meta' | 'noscript' | 'title' | 'base' | 'template';
+    attrs?: Record<string, string | boolean>;
+    content?: string;
+};
+
+/**
+ * head数组配置定义
+ * Head array configuration definition
+ */
+export const head_config: HeadConfigItem[] = [
     {
         // Wiki Version (Console Log Eggs :D)
         tag: 'script',
