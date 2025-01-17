@@ -1,7 +1,6 @@
 ---
 title: 悦动几何
-description: A reference page in my new Starlight docs site.
-draft: true
+description: RoidMC Wiki | GeoRising悦动几何
 sidebar:
   # 为链接设置自定义标签
   label: 悦动几何
@@ -40,7 +39,7 @@ sidebar:
 
 <img alt="GeoRising2 Logo" width="200" src="https://static-img.roidmc.net/imgs/utils/logo/georising/v2-logo.png" />
 
-> [点击游玩]() / [更新日志](../../changelog/georising#CataLogs-GeoRising-V2)
+> [点击游玩](https://s.ymzx.qq.com/lGsbXd) / [更新日志](../../changelog/georising#CataLogs-GeoRising-V2)
 
 </details>
 

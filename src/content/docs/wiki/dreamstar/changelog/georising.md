@@ -13,6 +13,7 @@ description: RoidMC Wiki | GeoRising悦动几何更新日志
 ## 目录
 
 1. [🔖 悦动几何](#CataLogs-GeoRising-V1)
+2. [🔖 悦动几何2](#CataLogs-GeoRising-V2)
 
 
 ## <a id="CataLogs-GeoRising-V1"></a>🔖 悦动几何
@@ -48,3 +49,19 @@ description: RoidMC Wiki | GeoRising悦动几何更新日志
 
 ### ⚙️ 功能更新
 - Alpha版本上线
+
+
+## <a id="CataLogs-GeoRising-V2"></a>🔖 悦动几何2
+
+## [悦动几何2 V1.0.1 - Beta]() - 2025-1-17
+
+### ⚙️ 功能更新
+- 更换高清封面
+- 修改游戏阶段系统，适配难度
+
+## [悦动几何2 V1.0.0 - Beta]() - 2025-1-16
+
+### ✨ 新内容
+- UniX UI
+- 重构`GeoX Engine`
+- 地图进入Beta阶段
