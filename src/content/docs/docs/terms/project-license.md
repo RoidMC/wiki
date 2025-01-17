@@ -57,7 +57,7 @@ sidebar:
 <summary>图标库</summary>
 
 - [Google Material Icons](https://github.com/google/material-design-icons) - [Apache 2.0 License](https://github.com/google/material-design-icons/blob/master/LICENSE)
-- [Fluent UI Emoji](https://github.com/microsoft/fluentui-emoji) - [MIT License](https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE)
+- [Fluent UI Emoji](https://github.com/microsoft/fluentui-emoji) / [Fluent UI Emoji Flat](https://github.com/microsoft/fluentui-emoji) - [MIT License](https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE)
 - [Line Awesome](https://github.com/icons8/line-awesome) - [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
 - [unDraw](https://undraw.co) - [unDraw License](https://undraw.co/license)
 
@@ -77,6 +77,13 @@ sidebar:
 - [HarmonyOS Sans] - [字体信息](https://www.hellofont.cn/font-detail?fontid=8738)
 - [字体圈欣意冠黑体] - [字体信息](https://www.hellofont.cn/font-detail?fontid=8174)
 - [Lovelo Line Bold] - [字体信息](https://www.hellofont.cn/font-detail?fontid=8347)
+
+</details>
+
+<details>
+<summary>美术资源</summary>
+
+- [Kenney.nl](https://kenney.nl) - [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/)
 
 </details>
 
