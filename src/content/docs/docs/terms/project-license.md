@@ -77,6 +77,7 @@ sidebar:
 - [HarmonyOS Sans] - [字体信息](https://www.hellofont.cn/font-detail?fontid=8738)
 - [字体圈欣意冠黑体] - [字体信息](https://www.hellofont.cn/font-detail?fontid=8174)
 - [Lovelo Line Bold] - [字体信息](https://www.hellofont.cn/font-detail?fontid=8347)
+- [阿里妈妈数黑体] - [字体信息](https://www.hellofont.cn/font-detail?fontid=10921)
 
 </details>
 
@@ -94,3 +95,4 @@ sidebar:
 [HarmonyOS Sans]: https://developer.huawei.com/consumer/cn/design/resource-V1/
 [字体圈欣意冠黑体]: https://mp.weixin.qq.com/s/FH-vCByorpyIJRT-5BsqpA
 [Lovelo Line Bold]: https://www.fontfabric.com/fonts/lovelo
+[阿里妈妈数黑体]:https://www.iconfont.cn/fonts/detail?cnid=a9fXc2HD9n7s
