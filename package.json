@@ -14,7 +14,7 @@
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/starlight": "^0.31.1",
     "@astrojs/starlight-tailwind": "^3.0.0",
-    "@astrojs/tailwind": "^5.1.4",
+    "@astrojs/tailwind": "^5.1.5",
     "@lorenzo_lewis/starlight-utils": "^0.2.0",
     "astro": "^5.1.8",
     "sass": "^1.83.4",
