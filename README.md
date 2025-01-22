@@ -17,11 +17,14 @@
 ├── public/
 ├── src/
 │   ├── assets/
+│   ├── components/
+│   ├── config/
 │   ├── content/
 │   │   ├── docs/
 │   │   └── config.ts
+│   ├── pages/
 │   └── env.d.ts
-├── astro.config.mjs
+├── astro.config.ts
 ├── package.json
 ├── tailwind.config.mjs
 └── tsconfig.json
