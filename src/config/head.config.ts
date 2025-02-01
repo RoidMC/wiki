@@ -74,7 +74,7 @@ export const head_config: HeadConfigItem[] = [
             src: 'https://js.users.51.la/21939415.js'
         }
     },
-        // CSS Libs
+    // CSS Libs
     {
         tag: 'link',
         attrs: {
@@ -89,7 +89,7 @@ export const head_config: HeadConfigItem[] = [
             href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css'
         }
     },
-        // Prefetch Libs
+    // Prefetch Libs
     {
         tag: 'link',
         attrs: {

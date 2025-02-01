@@ -20,8 +20,8 @@ export const sidebar_config = [
     {
         label: 'Docs',
         items: [
-            { slug: 'docs'},
-            { label: '📝 用户协议', translations:{ 'en-US':'📝 Terms' }, collapsed: true, autogenerate: { directory: 'docs/terms' } },
+            { slug: 'docs' },
+            { label: '📝 用户协议', translations: { 'en-US': '📝 Terms' }, collapsed: true, autogenerate: { directory: 'docs/terms' } },
             //{ label: 'Docs-Intro', slug: 'docs'},
         ],
     },
@@ -30,14 +30,14 @@ export const sidebar_config = [
         collapsed: true,
         items: [
             { slug: 'wiki' },
-            { 
+            {
                 label: '元梦地图 UGC',
-                translations:{ 'en-US':"Let's Go UGC" },
+                translations: { 'en-US': "Let's Go UGC" },
                 badge: 'FAQ',
                 collapsed: true,
                 items: [
-                    { label: '🕹️ 游戏项目', translations:{ 'en-US':'🕹️ Games' }, autogenerate: { directory: 'wiki/dreamstar/games' } },
-                    { label: '🛠️ 更新日志', translations:{ 'en-US':'🛠️ ChangeLog' }, autogenerate: { directory: 'wiki/dreamstar/changelog' } },
+                    { label: '🕹️ 游戏项目', translations: { 'en-US': '🕹️ Games' }, autogenerate: { directory: 'wiki/dreamstar/games' } },
+                    { label: '🛠️ 更新日志', translations: { 'en-US': '🛠️ ChangeLog' }, autogenerate: { directory: 'wiki/dreamstar/changelog' } },
                 ]
             }
         ],
@@ -46,8 +46,8 @@ export const sidebar_config = [
     {
         label: "leadingNavLinks",
         items: [
-          { label: "Docs", link: "docs" },
-          { label: "Wiki", link: "wiki" }
+            { label: "Docs", link: "docs" },
+            { label: "Wiki", link: "wiki" }
         ]
     },
 ];
