@@ -1,9 +1,9 @@
 ---
-title: 悦动几何
+title: 🕹️ 悦动几何
 description: RoidMC Wiki | GeoRising悦动几何
 sidebar:
   # 为链接设置自定义标签
-  label: 悦动几何
+  # label: 悦动几何
   # 为链接设置自定义顺序（数字越小显示在上方）
   order: 1
   # 为链接添加徽章
@@ -44,7 +44,6 @@ sidebar:
 </details>
 
 :::
-
 
 :::caution
 如果您想使用我们的美术资产，请前往[此处](../../../../../docs/terms/project-license)了解详细规定

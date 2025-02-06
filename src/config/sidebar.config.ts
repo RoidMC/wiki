@@ -31,8 +31,8 @@ export const sidebar_config = [
         items: [
             { slug: 'wiki' },
             {
-                label: '元梦地图 UGC',
-                translations: { 'en-US': "Let's Go UGC" },
+                label: '🎲 元梦地图 UGC',
+                translations: { 'en-US': "🎲 Let's Go UGC" },
                 badge: 'FAQ',
                 collapsed: true,
                 items: [

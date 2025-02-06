@@ -14,8 +14,6 @@ sidebar:
 
 :::
 
-
-
 :::tip[Project License]
 
 > Here are the content licenses used in our project
@@ -90,7 +88,6 @@ Please refer to the list of third-party resources for details
 </details>
 
 :::
-
 
 <!-- 链接列表 -->
 [Google Material Icons]: https://github.com/google/material-design-icons

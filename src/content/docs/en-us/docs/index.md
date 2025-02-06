@@ -14,7 +14,7 @@ sidebar:
 The documentation site is currently in the development phase and is not yet complete, the content of the document is for reference only.
 :::
 
-```bash title="Introductory"
+```bash title="Introduction"
 > Here is the new RoidMC Wiki, this page is the gateway to the documentation we host.
 > If you have any comments or feedback on how to improve our documentation, 
 > you can find our contact information on this page.
@@ -43,7 +43,6 @@ If you are accessing this `Wiki` from a link related to the Let's Go UGC map, pl
 - [QQ Channel](https://rmc.ink/social/qqchannel)
 
 </details>
-
 
 `This is a regular list, please see below for a list of links to Let's Go UGC`
 :::
