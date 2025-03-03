@@ -33,6 +33,13 @@ sidebar:
 </details>
 
 <details>
+<summary>SDK工具</summary>
+
+- UniX SDK - [MPL-2.0](https://github.com/RoidMC/UniX-SDK/blob/master/LICENSE)
+
+</details>
+
+<details>
 <summary>美术资源</summary>
 
 - 未经授权您无权使用版权所有者为RoidMC Studios相关的资源

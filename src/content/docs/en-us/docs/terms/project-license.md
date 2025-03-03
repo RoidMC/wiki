@@ -33,6 +33,14 @@ sidebar:
 </details>
 
 <details>
+<summary>SDK Toolkit</summary>
+
+- UniX SDK - [MPL-2.0](https://github.com/RoidMC/UniX-SDK/blob/master/LICENSE)
+
+</details>
+
+
+<details>
 <summary>Art Resources</summary>
 
 - You do not have the right to use resources associated with RoidMC Studios without authorization
