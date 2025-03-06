@@ -1,8 +1,8 @@
 {
   "name": "roidmc-wiki",
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.6.0",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -16,7 +16,7 @@
     "@astrojs/starlight": "^0.32.2",
     "@astrojs/starlight-tailwind": "^3.0.0",
     "@astrojs/tailwind": "^5.1.5",
-    "@lorenzo_lewis/starlight-utils": "^0.3.0",
+    "@lorenzo_lewis/starlight-utils": "^0.3.1",
     "astro": "^5.4.2",
     "sass": "^1.85.1",
     "sharp": "^0.33.5",

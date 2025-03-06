@@ -1,11 +1,21 @@
 ---
-import type { Props } from '@astrojs/starlight/props';
-import Default from '@astrojs/starlight/components/Footer.astro';
-import { LinkButton,Icon } from '@astrojs/starlight/components';
+import Default from "@astrojs/starlight/components/Footer.astro";
+import { LinkButton, Icon } from "@astrojs/starlight/components";
 
-const homepageSlugs = ['', 'en-us'];
-const isHomepage = homepageSlugs.includes(Astro.props.slug);
-
+const homepageSlugs = ["", "en-us"];
+function processStrings(arr: string[]): string[] {
+  return arr.map((str) => {
+    if (str === "") {
+      return `index.mdx`;
+    } else {
+      return `${str}/index.mdx`;
+    }
+  });
+}
+const isHomepage = processStrings(homepageSlugs).includes(
+  Astro.locals.starlightRoute.id,
+);
+const id = Astro.locals.starlightRoute.id;
 ---
 
 {
@@ -13,31 +23,55 @@ const isHomepage = homepageSlugs.includes(Astro.props.slug);
     <footer>
       <div class="common-footer" style="padding-top: 3rem; height: auto;">
         <div class="common-footer-info-left">
-        <LinkButton href="https://www.roidmc.com" variant="minimal" class="common-footer-link">
-        © RoidMC Studios
-        </LinkButton>
-        <LinkButton href="https://beian.miit.gov.cn" variant="minimal" class="common-footer-link">
-        赣ICP备2021006150号-1
-        </LinkButton>
-        <LinkButton href="https://beian.mps.gov.cn" variant="minimal" class="common-footer-link">
-        公安备案号-预留
-        </LinkButton>
+          <LinkButton
+            href="https://www.roidmc.com"
+            variant="minimal"
+            class="common-footer-link"
+          >
+            © RoidMC Studios
+          </LinkButton>
+          <LinkButton
+            href="https://beian.miit.gov.cn"
+            variant="minimal"
+            class="common-footer-link"
+          >
+            赣ICP备2021006150号-1
+          </LinkButton>
+          <LinkButton
+            href="https://beian.mps.gov.cn"
+            variant="minimal"
+            class="common-footer-link"
+          >
+            公安备案号-预留
+          </LinkButton>
         </div>
         <div class="common-footer-info-right">
-        <LinkButton href="https://astro.build" variant="minimal" class="common-footer-link text-right">
-        Built With Astro
-        </LinkButton>
-        <LinkButton href="https://github.com/roidmc/wiki" variant="minimal" class="common-footer-link text-right">
-          <i class="lab la-github">Source Code</i>
-        </LinkButton>
-        <LinkButton href="https://github.com/roidmc/wiki/blob/main/LICENSE" variant="minimal" class="common-footer-link text-right">
-          <i class="las la-id-badge">OSC License</i>
-        </LinkButton>
+          <LinkButton
+            href="https://astro.build"
+            variant="minimal"
+            class="common-footer-link text-right"
+          >
+            Built With Astro
+          </LinkButton>
+          <LinkButton
+            href="https://github.com/roidmc/wiki"
+            variant="minimal"
+            class="common-footer-link text-right"
+          >
+            <i class="lab la-github">Source Code</i>
+          </LinkButton>
+          <LinkButton
+            href="https://github.com/roidmc/wiki/blob/main/LICENSE"
+            variant="minimal"
+            class="common-footer-link text-right"
+          >
+            <i class="las la-id-badge">OSC License</i>
+          </LinkButton>
         </div>
       </div>
-      </footer>
+    </footer>
   ) : (
-    <Default {...Astro.props}>
+    <Default>
       <slot />
     </Default>
   )
