@@ -33,8 +33,8 @@ importers:
         specifier: ^0.33.5
         version: 0.33.5
       starlight-image-zoom:
-        specifier: ^0.10.1
-        version: 0.10.1(@astrojs/starlight@0.32.2(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(sass@1.85.1)(typescript@5.8.2)(yaml@2.7.0)))
+        specifier: ^0.11.1
+        version: 0.11.1(@astrojs/starlight@0.32.2(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(sass@1.85.1)(typescript@5.8.2)(yaml@2.7.0)))
       starlight-links-validator:
         specifier: ^0.14.3
         version: 0.14.3(@astrojs/starlight@0.32.2(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(sass@1.85.1)(typescript@5.8.2)(yaml@2.7.0)))
@@ -722,9 +722,6 @@ packages:
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
-
-  '@ungap/structured-clone@1.2.1':
-    resolution: {integrity: sha512-fEzPV3hSkSMltkw152tJKNARhOupqbH96MZWyRjNaYZOMIzbrTeQDG+MTc6Mr2pgzFQzFxAfmhGDNP5QK++2ZA==}
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
@@ -1968,11 +1965,11 @@ packages:
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
 
-  starlight-image-zoom@0.10.1:
-    resolution: {integrity: sha512-1uEwijShhFFcYA++lDmFV32WmZkpp/VMvD4+PC5h+7InnyPGMiT+mSVJzbddNEit44OxM5kxbO6/OqcBtjKpOA==}
+  starlight-image-zoom@0.11.1:
+    resolution: {integrity: sha512-TmnAyS+MWWV6h1fjuezrMFA36REd+7QzcjDFFFyC4ws5FDMoHsjQn0MlHM0cUaHEKfQ9y1PpL9LijCvRFuGbuw==}
     engines: {node: '>=18'}
     peerDependencies:
-      '@astrojs/starlight': '>=0.30.0'
+      '@astrojs/starlight': '>=0.32.0'
 
   starlight-links-validator@0.14.3:
     resolution: {integrity: sha512-2CvQs0ZdIVExrEQ1bn0r2aFx4n+VSOb6vDWK+gTNb5N1c+nXJ7VjUbEsQhj+9Lb7XgY6Nxqz9JXUM9364hJ3ZA==}
@@ -2949,8 +2946,6 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@ungap/structured-clone@1.2.1': {}
-
   '@ungap/structured-clone@1.3.0': {}
 
   acorn-jsx@5.3.2(acorn@8.14.1):
@@ -3551,7 +3546,7 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
       '@types/unist': 3.0.3
-      '@ungap/structured-clone': 1.2.1
+      '@ungap/structured-clone': 1.3.0
       hast-util-from-parse5: 8.0.3
       hast-util-to-parse5: 8.0.0
       html-void-elements: 3.0.0
@@ -4789,12 +4784,15 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
-  starlight-image-zoom@0.10.1(@astrojs/starlight@0.32.2(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(sass@1.85.1)(typescript@5.8.2)(yaml@2.7.0))):
+  starlight-image-zoom@0.11.1(@astrojs/starlight@0.32.2(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(sass@1.85.1)(typescript@5.8.2)(yaml@2.7.0))):
     dependencies:
       '@astrojs/starlight': 0.32.2(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(sass@1.85.1)(typescript@5.8.2)(yaml@2.7.0))
+      mdast-util-mdx-jsx: 3.2.0
       rehype-raw: 7.0.0
       unist-util-visit: 5.0.0
       unist-util-visit-parents: 6.0.1
+    transitivePeerDependencies:
+      - supports-color
 
   starlight-links-validator@0.14.3(@astrojs/starlight@0.32.2(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(sass@1.85.1)(typescript@5.8.2)(yaml@2.7.0))):
     dependencies:
