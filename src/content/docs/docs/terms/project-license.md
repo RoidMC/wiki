@@ -90,6 +90,7 @@ sidebar:
 <summary>美术资源</summary>
 
 - [Kenney.nl](https://kenney.nl) - [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/)
+- [Unsplash](https://unsplash.com) - [Unsplash License](https://unsplash.com/license)
 
 </details>
 

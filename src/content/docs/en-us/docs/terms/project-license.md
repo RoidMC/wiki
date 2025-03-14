@@ -92,6 +92,7 @@ Please refer to the list of third-party resources for details
 <summary>Art Resources</summary>
 
 - [Kenney.nl](https://kenney.nl) - [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/)
+- [Unsplash](https://unsplash.com) - [Unsplash License](https://unsplash.com/license)
 
 </details>
 
