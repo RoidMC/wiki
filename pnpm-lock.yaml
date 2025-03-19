@@ -21,8 +21,8 @@ importers:
         specifier: ^5.1.5
         version: 5.1.5(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0))(tailwindcss@3.4.17)
       '@lorenzo_lewis/starlight-utils':
-        specifier: ^0.3.1
-        version: 0.3.1(@astrojs/starlight@0.32.2(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0)))(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0))
+        specifier: ^0.3.2
+        version: 0.3.2(@astrojs/starlight@0.32.2(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0)))(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0))
       astro:
         specifier: ^5.5.2
         version: 5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0)
@@ -418,8 +418,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lorenzo_lewis/starlight-utils@0.3.1':
-    resolution: {integrity: sha512-fsBSoDwyxCuye2dylkaDPFCOjyPpoWjAHbnLhrH6sCfllUd+exma9QFEQU8ILwAzJpmEw10c01HZJa6oW+x0aw==}
+  '@lorenzo_lewis/starlight-utils@0.3.2':
+    resolution: {integrity: sha512-9GCZLyfIUTkXuE39jHjcCSwnOzm6hSGnC8DrHlo2imegiZmZSdG0eBMA/sTb/shLkvCzE2SGCaKM+EwIeO6oDw==}
     peerDependencies:
       '@astrojs/starlight': '>=0.32.0'
       astro: '>=5'
@@ -2638,7 +2638,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lorenzo_lewis/starlight-utils@0.3.1(@astrojs/starlight@0.32.2(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0)))(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0))':
+  '@lorenzo_lewis/starlight-utils@0.3.2(@astrojs/starlight@0.32.2(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0)))(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0))':
     dependencies:
       '@astrojs/starlight': 0.32.2(astro@5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0))
       astro: 5.5.2(jiti@2.4.2)(rollup@4.35.0)(sass@1.86.0)(typescript@5.8.2)(yaml@2.7.0)
