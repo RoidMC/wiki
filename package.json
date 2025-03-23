@@ -14,7 +14,7 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.3.0",
     "@astrojs/starlight": "^0.32.4",
-    "@astrojs/starlight-tailwind": "^3.0.0",
+    "@astrojs/starlight-tailwind": "^3.0.1",
     "@astrojs/tailwind": "^5.1.5",
     "@lorenzo_lewis/starlight-utils": "^0.3.2",
     "astro": "^5.5.4",
