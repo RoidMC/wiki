@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
 import starlightLinksValidator from 'starlight-links-validator'
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import starlight from "@astrojs/starlight";
@@ -75,5 +74,5 @@ export default defineConfig({
                 }),
                 starlightImageZoom()
             ],
-        }), tailwind({ applyBaseStyles: false }), sitemap()],
+        }), sitemap()],
 });
