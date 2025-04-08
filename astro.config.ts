@@ -40,10 +40,10 @@ export default defineConfig({
                     lang: 'en-US',
                 }
             },
-            social: {
-                //discord: 'https://rmc.ink/social/discord',
-                github: 'https://github.com/RoidMC/wiki',
-            },
+            social: [
+                //{ icon: 'discord', label: 'Discord', href: 'https://rmc.ink/social/discord' },
+                { icon: 'github', label: 'GitHub', href: 'https://github.com/RoidMC/wiki' }
+            ],
             sidebar: sidebar_config,
             lastUpdated: true,
             editLink: {
