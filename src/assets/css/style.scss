@@ -95,13 +95,13 @@ main {
 				@extend .common-footer-info-base;
 				animation: fadeInLeft;
 				animation-duration: 2s;
-				float: left;
+				align-items: flex-start;
 			}
 			&-right{
-				@extend .common-footer-info-base;
+				@extend .common-footer-info-base !optional;
 				animation: fadeInRight;
 				animation-duration: 2s;
-				float: right;
+				align-items: flex-end;
 			}
 		}
 		&-link {

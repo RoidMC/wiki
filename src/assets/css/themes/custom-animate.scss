@@ -3,17 +3,22 @@
  Todo: 添加鼠标跟随动画效果 2025/1/2 chencu 
  */
  
-a {
-    &:hover {
+%common {
+    %-animate {
         transition: transform 0.2s ease-in-out;
         transition-property: transform, all;
     }
 }
 
+a {
+    &:hover {
+        @extend %common-animate !optional;
+    }
+}
+
 label {
     &:hover {
-        transition: transform 0.2s ease-in-out;
-        transition-property: transform, all;
+        @extend %common-animate !optional;
     }
     &:focus-visible {
         outline: 0px
@@ -28,16 +33,14 @@ select {
 
 details {
     &:hover {
-        transition: transform 0.2s ease-in-out;
-        transition-property: transform, all;
+        @extend %common-animate !optional;
     }
 }
 
 // LinkCard.astro
 .sl-link-card {
     &:hover {
-        transition: transform 0.2s ease-in-out;
-        transition-property: transform, all;
+        @extend %common-animate !optional;
     }
 }
 
