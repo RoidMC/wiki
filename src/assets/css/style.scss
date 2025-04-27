@@ -28,8 +28,8 @@ html,body,div,span,code {
 	@include mcx_base_font_family ('HarmonyOS_Regular','true');
 }
 
-.page{
-	@include mcx_base_image (url("../../assets/imgs/utils/bg.svg"),center,center,cover,no-repeat,initial,initial,initial,none);
+.page {
+	@include mcx_base_image (url("../../assets/imgs/utils/bg.svg"),center,center,cover,no-repeat,fixed,initial,initial,none);
 }
 
 main {
