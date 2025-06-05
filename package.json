@@ -12,7 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.4.0",
+    "@astrojs/sitemap": "^3.4.1",
     "@astrojs/starlight": "^0.34.3",
     "@lorenzo_lewis/starlight-utils": "^0.3.2",
     "astro": "^5.8.2",
