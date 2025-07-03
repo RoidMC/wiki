@@ -62,7 +62,13 @@ Static assets, like favicons, can be placed in the `public/` directory.
 [![Pull-pr](https://img.shields.io/github/issues-pr/RoidMC/wiki?style=flat-square)](https://github.com/RoidMC/wiki/pulls)
 [![Pull-pr-closed](https://img.shields.io/github/issues-pr-closed/RoidMC/wiki?style=flat-square)](https://github.com/RoidMC/wiki/pulls?q=is%3Apr+is%3Aclosed)
 
-2020 - 2025 © [RoidMC Studios](https://www.roidmc.com) 
+
+---
+ <img alt="RoidMC-Wiki" width="200" src="https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png" />
+
+[Best Asian CDN, Edge, and Secure Solutions - Tencent EdgeOne](https://edgeone.ai/?from=github)
+
+2020 - 2025 © [RoidMC Studios](https://www.roidmc.com)  | CDN acceleration and security protection for this project are sponsored by [Tencent EdgeOne](https://edgeone.ai/?from=github)
 
 <!-- 
 Bro不想自己动手翻译，Wiki内的英文内容就请了Deepl大仙助力
