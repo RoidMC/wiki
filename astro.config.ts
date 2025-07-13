@@ -29,7 +29,6 @@ export default defineConfig({
             },
             favicon: '/wiki-assets/favicon.ico',
             head: head_config,
-            defaultLocale: 'root',
             locales: {
                 root: {
                     label: '简体中文',
@@ -38,7 +37,7 @@ export default defineConfig({
                 'en-us': {
                     label: 'English',
                     lang: 'en-US',
-                }
+                },
             },
             social: [
                 //{ icon: 'discord', label: 'Discord', href: 'https://rmc.ink/social/discord' },
@@ -74,5 +73,5 @@ export default defineConfig({
                 }),
                 starlightImageZoom()
             ],
-        }), sitemap()],
+        })],
 });
