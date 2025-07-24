@@ -22,6 +22,15 @@ export const sidebar_config = [
         items: [
             { slug: 'docs' },
             { label: '📝 用户协议', translations: { 'en-US': '📝 Terms' }, collapsed: true, autogenerate: { directory: 'docs/terms' } },
+            {
+                label: '🧰UniX SDK',
+                translations: { 'en-US': '🧰UniX SDK' },
+                collapsed: true,
+                items: [
+                    'docs/unix-sdk',
+                    { label: '🛠️ API', translations: { 'en-US': '🛠️ API' }, autogenerate: { directory: 'docs/unix-sdk/api' } },
+                ]
+            }
             //{ label: 'Docs-Intro', slug: 'docs'},
         ],
     },
