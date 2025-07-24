@@ -17,7 +17,7 @@ description: RoidMC Docs | UniX SDK API Reference | UDK.TomlUtils
 | 传参/返回值 | 类型 | 说明 |
 | ---- | ---- | ---- |
 | @param toml_string | string | Toml字符串 |
-| @return data  | table | 解析的结果 | 
+| @return data | table | 解析的结果 | 
 
 ```lua
 -- 示例代码

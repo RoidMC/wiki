@@ -4,6 +4,7 @@ description: RoidMC Docs | UniX SDK API Reference | UDK.Array
 ---
 
 ## UniX-SDK.Array
+---
 
 ### UDK.Array.GetValueByEnum
 
