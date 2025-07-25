@@ -1,6 +1,6 @@
 ---
 title: 🧰 UDK.Player
-description: RoidMC Docs | UniX Dev Kit API Reference | UDK.Player
+description: RoidMC Docs | UniX SDK API Reference | UDK.Player
 ---
 
 ## UniX-SDK.Player
