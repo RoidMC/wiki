@@ -12,8 +12,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.4.1",
-    "@astrojs/starlight": "^0.35.1",
+    "@astrojs/sitemap": "^3.4.2",
+    "@astrojs/starlight": "^0.35.2",
     "@lorenzo_lewis/starlight-utils": "^0.3.2",
     "astro": "^5.12.5",
     "sass": "^1.89.2",

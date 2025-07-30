@@ -8,6 +8,13 @@ import { sidebar_config } from './src/config/sidebar.config'
 import { head_config } from './src/config/head.config'
 
 // https://astro.build/config
+/**
+ * https://v2ex.com/t/1056428
+ * 51.la旗下站点存在投毒行为，
+ * 包括bootcss/bootcdn/staticfile/统计鸟
+ * 不要导入和它们域名相关的CSS/JS库
+ * 郑州紫田网络科技有限公司WCNM
+ */
 export default defineConfig({
     site: 'https://wiki.roidmc.com',
     integrations: [
