@@ -65,15 +65,6 @@ export const head_config: HeadConfigItem[] = [
         })();
         `,
     },
-    {
-        // 51LA Analytics
-        tag: 'script',
-        attrs: {
-            type: 'text/javascript',
-            async: true,
-            src: 'https://js.users.51.la/21939415.js'
-        }
-    },
     // CSS Libs
     {
         tag: 'link',
