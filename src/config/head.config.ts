@@ -70,14 +70,14 @@ export const head_config: HeadConfigItem[] = [
         tag: 'link',
         attrs: {
             rel: 'stylesheet',
-            href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/animate.css/4.1.1/animate.min.css'
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
         }
     },
     {
         tag: 'link',
         attrs: {
             rel: 'stylesheet',
-            href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css'
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css'
         }
     },
     // Prefetch Libs
@@ -86,7 +86,7 @@ export const head_config: HeadConfigItem[] = [
         attrs: {
             rel: 'dns-prefetch',
             as: 'style',
-            href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/animate.css/4.1.1/animate.min.css'
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
         }
     },
     {
@@ -94,7 +94,7 @@ export const head_config: HeadConfigItem[] = [
         attrs: {
             rel: 'dns-prefetch',
             as: 'style',
-            href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css'
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css'
         }
     },
     {
