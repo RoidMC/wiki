@@ -30,8 +30,8 @@ importers:
         specifier: ^0.13.0
         version: 0.13.0(@astrojs/starlight@0.35.2(astro@5.13.4(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.47.1)(sass@1.91.0)(typescript@5.9.2)(yaml@2.7.0)))
       starlight-links-validator:
-        specifier: ^0.17.1
-        version: 0.17.1(@astrojs/starlight@0.35.2(astro@5.13.4(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.47.1)(sass@1.91.0)(typescript@5.9.2)(yaml@2.7.0)))
+        specifier: ^0.17.2
+        version: 0.17.2(@astrojs/starlight@0.35.2(astro@5.13.4(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.47.1)(sass@1.91.0)(typescript@5.9.2)(yaml@2.7.0)))
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
@@ -1867,8 +1867,8 @@ packages:
     peerDependencies:
       '@astrojs/starlight': '>=0.32.0'
 
-  starlight-links-validator@0.17.1:
-    resolution: {integrity: sha512-d2QoBO3mQPWYq/TO4I0kT/3Z9hFulnMzMPaG2dW0H14hPq4N7ZwiBl2FMrLK8I4UE34sztcBatvWCZc62S0BMQ==}
+  starlight-links-validator@0.17.2:
+    resolution: {integrity: sha512-d2SRWu04HPiUzrzntuv/uzuXnIu4reJwzX1c+7uvcnqOCuzgpv+tmlUC+dp3VYpmfxQy8RX+xcWtfcEkx905VA==}
     engines: {node: '>=18.17.1'}
     peerDependencies:
       '@astrojs/starlight': '>=0.32.0'
@@ -2070,9 +2070,6 @@ packages:
 
   vfile-location@5.0.3:
     resolution: {integrity: sha512-5yXvWDEgqeiYiBe1lbxYF7UMAIm/IcopxMHrMQDq3nvKcjPKIhZklUKL+AE7J7uApI4kwe2snsK+eI6UTj9EHg==}
-
-  vfile-message@4.0.2:
-    resolution: {integrity: sha512-jRDZ1IMLttGj41KcZvlrYAaI3CfqpLpfpf+Mfig13viT6NKvRzWZ+lXz0Y5D60w6uJIBAOGq9mSHf0gktF0duw==}
 
   vfile-message@4.0.3:
     resolution: {integrity: sha512-QTHzsGd1EhbZs4AsQ20JX1rC3cOlt/IWJruk893DfLRr57lcnOeMaWG4K0JrRta4mIJZKth2Au3mM3u03/JWKw==}
@@ -3366,7 +3363,7 @@ snapshots:
       hast-util-from-parse5: 8.0.3
       parse5: 7.3.0
       vfile: 6.0.3
-      vfile-message: 4.0.2
+      vfile-message: 4.0.3
 
   hast-util-from-parse5@8.0.3:
     dependencies:
@@ -3795,7 +3792,7 @@ snapshots:
       parse-entities: 4.0.2
       stringify-entities: 4.0.4
       unist-util-stringify-position: 4.0.0
-      vfile-message: 4.0.2
+      vfile-message: 4.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -4577,7 +4574,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  starlight-links-validator@0.17.1(@astrojs/starlight@0.35.2(astro@5.13.4(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.47.1)(sass@1.91.0)(typescript@5.9.2)(yaml@2.7.0))):
+  starlight-links-validator@0.17.2(@astrojs/starlight@0.35.2(astro@5.13.4(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.47.1)(sass@1.91.0)(typescript@5.9.2)(yaml@2.7.0))):
     dependencies:
       '@astrojs/starlight': 0.35.2(astro@5.13.4(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.47.1)(sass@1.91.0)(typescript@5.9.2)(yaml@2.7.0))
       '@types/picomatch': 3.0.2
@@ -4757,11 +4754,6 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       vfile: 6.0.3
-
-  vfile-message@4.0.2:
-    dependencies:
-      '@types/unist': 3.0.3
-      unist-util-stringify-position: 4.0.0
 
   vfile-message@4.0.3:
     dependencies:
