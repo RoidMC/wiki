@@ -15,11 +15,11 @@
     "@astrojs/sitemap": "^3.5.1",
     "@astrojs/starlight": "^0.35.2",
     "@lorenzo_lewis/starlight-utils": "^0.3.2",
-    "astro": "^5.13.4",
-    "sass": "^1.91.0",
+    "astro": "^5.13.5",
+    "sass": "^1.92.0",
     "sharp": "^0.34.3",
     "starlight-image-zoom": "^0.13.0",
-    "starlight-links-validator": "^0.17.1",
+    "starlight-links-validator": "^0.17.2",
     "typescript": "^5.9.2"
   }
 }
