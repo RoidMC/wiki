@@ -27,8 +27,8 @@ importers:
         specifier: ^0.34.4
         version: 0.34.4
       starlight-image-zoom:
-        specifier: ^0.13.0
-        version: 0.13.0(@astrojs/starlight@0.36.0(astro@5.14.1(@types/node@24.5.2)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.52.2)(sass@1.93.2)(typescript@5.9.2)(yaml@2.7.0)))
+        specifier: ^0.13.1
+        version: 0.13.1(@astrojs/starlight@0.36.0(astro@5.14.1(@types/node@24.5.2)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.52.2)(sass@1.93.2)(typescript@5.9.2)(yaml@2.7.0)))
       starlight-links-validator:
         specifier: ^0.18.0
         version: 0.18.0(@astrojs/starlight@0.36.0(astro@5.14.1(@types/node@24.5.2)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.52.2)(sass@1.93.2)(typescript@5.9.2)(yaml@2.7.0)))
@@ -1762,8 +1762,8 @@ packages:
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
 
-  starlight-image-zoom@0.13.0:
-    resolution: {integrity: sha512-7K/7gshnKooYd4ePy5vtyv1jFoFVNUb8IoXWDcnY69+nxvmLATNrmOzD2M4TJ/aKynPSBSM6j9ia4s/PPy/JGA==}
+  starlight-image-zoom@0.13.1:
+    resolution: {integrity: sha512-lzSAymjOnI8Ny8NnSjmOEKLp+KaHYDMyKeK4VX0WhwbA3bZ1V13mmjUJ0Mwi+EiqA885rUnoDhPAPrCbgqqNEg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@astrojs/starlight': '>=0.32.0'
@@ -4369,7 +4369,7 @@ snapshots:
 
   space-separated-tokens@2.0.2: {}
 
-  starlight-image-zoom@0.13.0(@astrojs/starlight@0.36.0(astro@5.14.1(@types/node@24.5.2)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.52.2)(sass@1.93.2)(typescript@5.9.2)(yaml@2.7.0))):
+  starlight-image-zoom@0.13.1(@astrojs/starlight@0.36.0(astro@5.14.1(@types/node@24.5.2)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.52.2)(sass@1.93.2)(typescript@5.9.2)(yaml@2.7.0))):
     dependencies:
       '@astrojs/starlight': 0.36.0(astro@5.14.1(@types/node@24.5.2)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.52.2)(sass@1.93.2)(typescript@5.9.2)(yaml@2.7.0))
       mdast-util-mdx-jsx: 3.2.0
