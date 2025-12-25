@@ -30,8 +30,8 @@ importers:
         specifier: ^0.13.2
         version: 0.13.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.54.0)(sass@1.97.1)(typescript@5.9.3)(yaml@2.7.0)))
       starlight-links-validator:
-        specifier: ^0.19.1
-        version: 0.19.1(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.54.0)(sass@1.97.1)(typescript@5.9.3)(yaml@2.7.0)))
+        specifier: ^0.19.2
+        version: 0.19.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.54.0)(sass@1.97.1)(typescript@5.9.3)(yaml@2.7.0)))(astro@5.16.6(@types/node@25.0.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.54.0)(sass@1.97.1)(typescript@5.9.3)(yaml@2.7.0))
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -1811,11 +1811,12 @@ packages:
     peerDependencies:
       '@astrojs/starlight': '>=0.32.0'
 
-  starlight-links-validator@0.19.1:
-    resolution: {integrity: sha512-Ermpe7zJG5uRJUqIWflX4VNLozOBX2/N4XvHvyaPQcHsfdN7y81qEd3n56PYdVb3Tj4/6ZFFSfAtiCe78XtBVw==}
+  starlight-links-validator@0.19.2:
+    resolution: {integrity: sha512-IHeK3R78fsmv53VfRkGbXkwK1CQEUBHM9QPzBEyoAxjZ/ssi5gjV+F4oNNUppTR48iPp+lEY0MTAmvkX7yNnkw==}
     engines: {node: '>=18.17.1'}
     peerDependencies:
       '@astrojs/starlight': '>=0.32.0'
+      astro: '>=5.1.5'
 
   stream-replace-string@2.0.0:
     resolution: {integrity: sha512-TlnjJ1C0QrmxRNrON00JvaFFlNh5TTG00APw23j74ET7gkQpTASi6/L2fuiav8pzK715HXtUeClpBTw2NPSn6w==}
@@ -4458,10 +4459,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  starlight-links-validator@0.19.1(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.54.0)(sass@1.97.1)(typescript@5.9.3)(yaml@2.7.0))):
+  starlight-links-validator@0.19.2(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.54.0)(sass@1.97.1)(typescript@5.9.3)(yaml@2.7.0)))(astro@5.16.6(@types/node@25.0.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.54.0)(sass@1.97.1)(typescript@5.9.3)(yaml@2.7.0)):
     dependencies:
       '@astrojs/starlight': 0.37.1(astro@5.16.6(@types/node@25.0.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.54.0)(sass@1.97.1)(typescript@5.9.3)(yaml@2.7.0))
       '@types/picomatch': 3.0.2
+      astro: 5.16.6(@types/node@25.0.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.54.0)(sass@1.97.1)(typescript@5.9.3)(yaml@2.7.0)
       github-slugger: 2.0.0
       hast-util-from-html: 2.0.3
       hast-util-has-property: 3.0.0
