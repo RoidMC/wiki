@@ -15,7 +15,7 @@
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/starlight": "^0.37.1",
     "@lorenzo_lewis/starlight-utils": "^0.3.2",
-    "astro": "^5.16.11",
+    "astro": "^5.16.14",
     "sass": "^1.97.1",
     "sharp": "^0.34.5",
     "starlight-image-zoom": "^0.13.2",
