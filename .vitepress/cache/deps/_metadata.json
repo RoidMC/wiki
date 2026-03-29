@@ -1,0 +1,67 @@
+{
+  "hash": "7a9d3b08",
+  "configHash": "2930e9c6",
+  "lockfileHash": "860406c1",
+  "browserHash": "16a78b8f",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/.pnpm/vue@3.5.31_typescript@6.0.2/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "485de653",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/.pnpm/@vue+devtools-api@8.1.1/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "44835b6c",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../node_modules/.pnpm/@vueuse+core@14.2.1_vue@3.5.31_typescript@6.0.2_/node_modules/@vueuse/core/dist/index.js",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "4c7dfccc",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../node_modules/.pnpm/@vueuse+integrations@14.2.1_b3e0c5be6ab06a77f405128e71170fa3/node_modules/@vueuse/integrations/dist/useFocusTrap.js",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "b6902e98",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../node_modules/.pnpm/mark.js@8.11.1/node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "f14e92ea",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../node_modules/.pnpm/minisearch@7.2.0/node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "3e3293d6",
+      "needsInterop": false
+    },
+    "@roidmc/horizon-theme": {
+      "src": "../../../node_modules/.pnpm/@roidmc+horizon-theme@0.0.4_f13e0d4d7225d71b2f981133466c06a6/node_modules/@roidmc/horizon-theme/index.js",
+      "file": "@roidmc_horizon-theme.js",
+      "fileHash": "a70a0abb",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "dist-BQkVemKW-64P7XYJJ": {
+      "file": "dist-BQkVemKW-64P7XYJJ.js"
+    },
+    "chunk-ZDC3AU3Z": {
+      "file": "chunk-ZDC3AU3Z.js"
+    },
+    "chunk-U632ANKX": {
+      "file": "chunk-U632ANKX.js"
+    },
+    "fancybox-DHEDsGxq-2TJTYXVU": {
+      "file": "fancybox-DHEDsGxq-2TJTYXVU.js"
+    },
+    "chunk-7YRT7HHA": {
+      "file": "chunk-7YRT7HHA.js"
+    }
+  }
+}

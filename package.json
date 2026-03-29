@@ -2,24 +2,18 @@
   "name": "roidmc-wiki",
   "packageManager": "pnpm@10.6.0",
   "type": "module",
-  "version": "0.0.2",
-  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.1",
-    "@astrojs/starlight": "^0.38.1",
-    "@lorenzo_lewis/starlight-utils": "^0.3.2",
-    "astro": "^6.0.5",
-    "sass": "^1.98.0",
-    "sharp": "^0.34.5",
-    "starlight-image-zoom": "^0.14.1",
-    "starlight-links-validator": "^0.20.1",
-    "typescript": "^5.9.3"
+    "@roidmc/vitepress-uni-icons": "^0.0.7"
+  },
+  "devDependencies": {
+    "@roidmc/horizon-theme": "^0.0.4",
+    "typescript": "^6.0.2",
+    "vitepress": "^2.0.0-alpha.17",
+    "vue": "^3.5.31"
   }
 }
