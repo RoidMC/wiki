@@ -1,16 +1,18 @@
 # <img alt="RoidMC-Wiki" width="30" src="https://raw.githubusercontent.com/RoidMC/wiki/refs/heads/main/src/assets/imgs/logo/logo-big-r-text-RoundCorner.png" /> RoidMC Wiki
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](https://github.com/RoidMC/wiki/blob/main/LICENSE)
-[![Astro-Based](https://img.shields.io/badge/-astro-gray?style=flat-square&logo=Astro)](https://astro.build)
-[![Built with Starlight](https://img.shields.io/badge/Built_with_Starlight-gray?style=flat-square&logo=Github)](https://starlight.astro.build)
+[![Horizon Theme](https://img.shields.io/badge/-Horizon_Theme-gray?style=flat-square&logo=Json)](https://github.com/roidmc)
+[![Powered by Horizon](https://img.shields.io/badge/Powered_by_Horizon-gray?style=flat-square&logo=Github)](https://github.com/roidmc)
 
 ## 💬 摘要
 
-* 本项目基于[Astro](https://astro.build)和[Starlight](https://starlight.astro.build)主题开发，取代基于Hexo的旧版Wiki
+* 本项目基于内部自研[Horizon Theme](https://github.com/roidmc)开发，使用`Horizon Pulse`技术对Vitepress实现了动态HMR，无需刷新页面即可查看最新内容（动态SPA）
 * 同时Wiki内的文章等均采用[CC NC-BY-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)许可
 * 存储库采用[GPL-V3](https://github.com/RoidMC/wiki/blob/main/LICENSE)开源协议
 
 ## 🚀 项目结构
+
+`还没重写完，懒得改这里`
 
 ```
 .
@@ -42,17 +44,14 @@ Static assets, like favicons, can be placed in the `public/` directory.
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm run dev`             | Starts local dev server at `localhost:5321`      |
+| `pnpm run build`           | Build your production site to `./dist/`          |
+| `pnpm run preview`         | Preview your build locally, before deploying     |
 
 ## 👀 文档资料
 
-- [Starlight文档](https://starlight.astro.build/)
-- [Astro文档](https://docs.astro.build)
+- [VitePress文档](https://vitepress.dev)
 
 🎨  数据统计
 ---
@@ -70,7 +69,7 @@ Static assets, like favicons, can be placed in the `public/` directory.
 
 - [Best Asian CDN, Edge, and Secure Solutions - Tencent EdgeOne](https://edgeone.ai/?from=github)
 
-2020 - 2025 © [RoidMC Studios](https://www.roidmc.com)  | CDN acceleration and security protection for this project are sponsored by [Tencent EdgeOne](https://edgeone.ai/?from=github)
+2020 - 2026 © [RoidMC Studios](https://www.roidmc.com)  | CDN acceleration and security protection for this project are sponsored by [Tencent EdgeOne](https://edgeone.ai/?from=github)
 
 <!-- 
 Bro不想自己动手翻译，Wiki内的英文内容就请了Deepl大仙助力
