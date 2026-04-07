@@ -19,7 +19,7 @@
     "sass": "^1.98.0",
     "sharp": "^0.34.5",
     "starlight-image-zoom": "^0.14.1",
-    "starlight-links-validator": "^0.20.1",
+    "starlight-links-validator": "^0.22.0",
     "typescript": "^5.9.3"
   }
 }
