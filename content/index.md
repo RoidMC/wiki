@@ -4,22 +4,21 @@ layout: home
 
 hero:
   name: "RoidMC Wiki"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  tagline: Powered By Horizon Theme
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: RoidMC Docs
+      link: /docs
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: RoidMC Wiki
+      link: /wiki
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 🧭 RoidMC Docs
+    link: /docs
+    details: 里面包含了我们的一些常规文档，如更新日志等 :O
+  - title: 🧭 RoidMC Wiki
+    link: /wiki
+    details: 需要查看我们的Wiki内容？点此查看
 ---
 

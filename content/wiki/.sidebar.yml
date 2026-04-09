@@ -1,0 +1,15 @@
+flatten: merge
+independent: true
+includeFolderIndexFile: true
+
+children:
+  dreamstar:
+    title: 🎲 元梦地图 UGC
+    order: 1
+    children:
+      games:
+        title: 🕹️ 游戏项目
+        order: 0
+      changelog:
+        title: 🛠️ 更新日志
+        order: 1

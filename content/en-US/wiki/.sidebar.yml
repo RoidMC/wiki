@@ -1,0 +1,15 @@
+flatten: merge
+independent: true
+includeFolderIndexFile: true
+
+children:
+  dreamstar:
+    title: 🎲 Let's Go UGC
+    order: 1
+    children:
+      games:
+        title: 🕹️ Games
+        order: 0
+      changelog:
+        title: 🛠️ Changelog
+        order: 1

@@ -21,21 +21,21 @@ import {
   withModifiers
 } from "./chunk-U632ANKX.js";
 
-// node_modules/.pnpm/@roidmc+horizon-theme@0.0.4_f13e0d4d7225d71b2f981133466c06a6/node_modules/@roidmc/horizon-theme/_plugin-vue_export-helper-BbeiF_JO.js
+// node_modules/.pnpm/@roidmc+horizon-theme@0.0.1_22dbe4ce57e619d749cb787122010dff/node_modules/@roidmc/horizon-theme/_plugin-vue_export-helper-BbeiF_JO.js
 var _plugin_vue_export_helper_default = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) target[key] = val;
   return target;
 };
 
-// node_modules/.pnpm/@roidmc+horizon-theme@0.0.4_f13e0d4d7225d71b2f981133466c06a6/node_modules/@roidmc/horizon-theme/types-BcQ77ikt.js
+// node_modules/.pnpm/@roidmc+horizon-theme@0.0.1_22dbe4ce57e619d749cb787122010dff/node_modules/@roidmc/horizon-theme/types-BcQ77ikt.js
 function definePlugin(options) {
   return options;
 }
 
-// node_modules/.pnpm/@roidmc+horizon-theme@0.0.4_f13e0d4d7225d71b2f981133466c06a6/node_modules/@roidmc/horizon-theme/index.js
+// node_modules/.pnpm/@roidmc+horizon-theme@0.0.1_22dbe4ce57e619d749cb787122010dff/node_modules/@roidmc/horizon-theme/index.js
 import DefaultTheme from "vitepress/theme";
-import "C:/Users/chenc/Desktop/RoidMC-Code/wiki/node_modules/.pnpm/@roidmc+horizon-theme@0.0.4_f13e0d4d7225d71b2f981133466c06a6/node_modules/@roidmc/horizon-theme/horizon-theme.css";
+import "C:/Users/chenc/Desktop/RoidMC-Code/wiki/node_modules/.pnpm/@roidmc+horizon-theme@0.0.1_22dbe4ce57e619d749cb787122010dff/node_modules/@roidmc/horizon-theme/horizon-theme.css";
 import { inBrowser, useData } from "vitepress";
 var _hoisted_1 = { class: "horizon-link-guard-dialog" };
 var _hoisted_2 = { class: "horizon-link-guard-message" };
@@ -211,11 +211,22 @@ var Layout_default = defineComponent({
 });
 var defaultConfig$2 = {
   enable: true,
-  style: "favicon"
+  style: "favicon",
+  excludeDomains: [],
+  excludeSelectors: []
 };
-var initLinkIcons = () => {
+var matchesDomainPattern = (hostname, pattern) => {
+  if (pattern.startsWith("*.")) {
+    const suffix = pattern.slice(2);
+    return hostname === suffix || hostname.endsWith("." + suffix);
+  }
+  return hostname === pattern;
+};
+var initLinkIcons = (config) => {
   if (typeof window === "undefined") return;
-  document.querySelectorAll('.vp-doc a:not([href^="https://img.shields.io/"]):not(.not):not([data-link-icon-processed])').forEach((link) => {
+  let selector = ".vp-doc a:not([data-link-icon-processed])";
+  if (config.excludeSelectors.length > 0) selector = `.vp-doc a${config.excludeSelectors.map((s) => `:not(${s})`).join("")}:not([data-link-icon-processed])`;
+  document.querySelectorAll(selector).forEach((link) => {
     const href = link.getAttribute("href");
     if (!href || href.startsWith("#") || href.startsWith("/")) {
       link.setAttribute("data-link-icon-processed", "true");
@@ -224,8 +235,10 @@ var initLinkIcons = () => {
     try {
       const { hostname } = new URL(href, window.location.origin);
       if (hostname && hostname !== window.location.hostname) {
-        link.style.setProperty("--horizon-plugin-theme-link-icon-favicon", `url(https://favicon.im/${hostname})`);
-        link.classList.add("external-link");
+        if (!config.excludeDomains.some((pattern) => matchesDomainPattern(hostname, pattern))) {
+          link.style.setProperty("--horizon-plugin-theme-link-icon-favicon", `url(https://favicon.im/${hostname})`);
+          link.classList.add("external-link");
+        }
       }
     } catch {
     } finally {
@@ -245,7 +258,7 @@ var factory$4 = (config) => {
       if (mergedConfig.enable) document.body.classList.add("horizon-link-icon-enabled");
     },
     onDomUpdated() {
-      if (mergedConfig.enable && mergedConfig.style === "favicon") initLinkIcons();
+      if (mergedConfig.enable && mergedConfig.style === "favicon") initLinkIcons(mergedConfig);
     }
   };
 };
@@ -288,7 +301,7 @@ var buildExcludeSelector = (exclude) => {
   return exclude.map((prefix) => `:not([src^="${prefix}"])`).join("");
 };
 var bindFancybox = async (exclude, options = defaultFancyboxOptions) => {
-  const { Fancybox } = await import("./fancybox-DHEDsGxq-2TJTYXVU.js");
+  const { Fancybox } = await import("./fancybox-DHEDsGxq-F7LXNFWN.js");
   const excludeSelector = buildExcludeSelector(exclude);
   document.querySelectorAll(`.vp-doc img${excludeSelector}:not(.not)`).forEach((img) => {
     const image = img;
@@ -303,7 +316,7 @@ var bindFancybox = async (exclude, options = defaultFancyboxOptions) => {
   Fancybox.bind('[data-fancybox="gallery"]', options);
 };
 var destroyFancybox = async () => {
-  const { Fancybox } = await import("./dist-BQkVemKW-64P7XYJJ.js");
+  const { Fancybox } = await import("./dist-BQkVemKW-6SEF7P5H.js");
   Fancybox.destroy();
 };
 var findNearestHeading = (imgElement) => {

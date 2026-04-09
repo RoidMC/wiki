@@ -16,6 +16,7 @@ export default defineConfig(defineHorizonConfig({
     debugPrint: false,
     collapsed: true,
     useTitleFromFileHeading: true,
+    includeRootIndexFile: true
   },
 
   markdown: {
@@ -40,13 +41,36 @@ export default defineConfig(defineHorizonConfig({
     ],
   },
 
+  locales: {
+    root: {
+      lang: 'zh-CN',
+      label: '简体中文',
+      themeConfig: {
+        nav: [
+          { text: 'Docs', link: '/docs' },
+          { text: 'Wiki', link: '/wiki' }
+        ],
+      }
+    },
+    'en-US': {
+      lang: 'en-US',
+      label: 'English',
+      themeConfig: {
+        nav: [
+          { text: 'Docs', link: '/en-US/docs' },
+          { text: 'Wiki', link: '/en-US/wiki' }
+        ],
+      }
+    }
+  },
+
   title: "RoidMC Wiki",
   description: "RoidMC Wiki",
+  head: [
+    ['link', { rel: 'icon', href: '/wiki-assets/favicon.ico' }]
+  ],
   themeConfig: {
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    logo: '/wiki-assets/imgs/logo/logo-big-r-text-RoundCorner.png',
     search: {
       provider: 'local'
     },
@@ -81,8 +105,8 @@ export default defineConfig(defineHorizonConfig({
     },
 
     footer: {
-      message: 'Made with ❤️',
-      copyright: '© RoidMC Studios | Horizon Theme',
+      message: 'Made with ❤️ | Horizon Theme',
+      copyright: '© RoidMC Studios | 赣ICP备2021006150号-1',
       hallowText: 'ROIDMC STUDIOS'
     },
 

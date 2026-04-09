@@ -1,0 +1,13 @@
+flatten: merge
+independent: true
+includeFolderIndexFile: true
+
+children:
+  terms:
+    title: 📝 服务条款
+  unix-sdk:
+    title: 🧰 UniX SDK
+    children:
+      api:
+        title: 🛠️ API
+        order: 1
