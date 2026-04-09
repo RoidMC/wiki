@@ -1,65 +1,66 @@
-name: Wiki Delpoy
+name: Wiki Deploy
 
-# 触发条件: push到Main分支后自动触发
 on:
   push:
     branches: ["main", "next"]
-  #pull_request:
-  #  branches: ["main","dev"]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-jobs:
-  build-astro-wiki:
-    if: contains(github.event.head_commit.message, '[actions skip]') == false
-    name: Wiki Build & Delpoy
-    # 使用最新版Ubuntu作为编译部署环境
-    runs-on: ubuntu-latest
+concurrency:
+  group: wiki-deploy
+  cancel-in-progress: false
 
+jobs:
+  build-and-deploy:
+    if: contains(github.event.head_commit.message, '[actions skip]') == false
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout codes
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      # 设置Node.js环境
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
         with:
           node-version: '24'
+          cache: pnpm
 
-      # 设置包缓存目录
-      - name: Cache node modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
-      # 配置vitepress运行安装环境
-      - name: Setup VitePress
-        env:
-          ACTION_DEPLOY_KEY: ${{ secrets.WIKI_DEPLOY_KEY }}
+      - name: Build
+        run: pnpm run build
+
+      - name: Configure SSH
         run: |
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.WIKI_DEPLOY_KEY }}
+
+      - name: Setup Git
+        run: |
           git config --global user.email "106982374+RoidMC-Bot@users.noreply.github.com"
           git config --global user.name "roidmc-bot"
-          npm install
-          npm run build
 
-      # 部署vitepress至Github Pages   
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           git-config-name: "roidmc-bot"
           git-config-email: "106982374+RoidMC-Bot@users.noreply.github.com"
           ssh-key: ${{ secrets.WIKI_DEPLOY_KEY }}
-          #silent: true
           single-commit: true
           branch: gh-pages
-          folder: dist
+          folder: .vitepress/dist
           clean: false
