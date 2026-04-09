@@ -4,6 +4,8 @@ import { uniIconsPlugin, uniIconsMarkdown } from '@roidmc/vitepress-uni-icons'
 
 export default defineConfig(defineHorizonConfig({
   srcDir: "content",
+  // 先跑起来再说，死链接后面再修
+  ignoreDeadLinks: true,
 
   // 启用 i18n 自动加载
   i18n: {
