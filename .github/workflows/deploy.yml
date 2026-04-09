@@ -3,7 +3,7 @@ name: Wiki Delpoy
 # 触发条件: push到Main分支后自动触发
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "next"]
   #pull_request:
   #  branches: ["main","dev"]
 
@@ -27,7 +27,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
 
       # 设置包缓存目录
       - name: Cache node modules
@@ -36,8 +36,8 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
-      # 配置Astro运行安装环境
-      - name: Setup Astro
+      # 配置vitepress运行安装环境
+      - name: Setup VitePress
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.WIKI_DEPLOY_KEY }}
         run: |
@@ -51,7 +51,7 @@ jobs:
           npm install
           npm run build
 
-      # 部署Astro至Github Pages   
+      # 部署vitepress至Github Pages   
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
