@@ -61,4 +61,4 @@ jobs:
           single-commit: true
           branch: gh-pages
           folder: .vitepress/dist
-          clean: false
+          clean: true
