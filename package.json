@@ -11,7 +11,7 @@
     "@roidmc/vitepress-uni-icons": "^0.0.7"
   },
   "devDependencies": {
-    "@roidmc/horizon-theme": "0.0.11",
+    "@roidmc/horizon-theme": "^0.0.12",
     "sass": "^1.99.0",
     "typescript": "^6.0.2",
     "vitepress": "^2.0.0-alpha.17",

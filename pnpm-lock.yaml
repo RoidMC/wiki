@@ -13,8 +13,8 @@ importers:
         version: 0.0.7
     devDependencies:
       '@roidmc/horizon-theme':
-        specifier: 0.0.11
-        version: 0.0.11(typescript@6.0.2)(vitepress@2.0.0-alpha.17(@types/node@24.12.0)(jiti@2.4.2)(lightningcss@1.29.2)(postcss@8.5.8)(sass@1.99.0)(typescript@6.0.2)(yaml@2.7.0))(vue@3.5.32(typescript@6.0.2))
+        specifier: ^0.0.12
+        version: 0.0.12(typescript@6.0.2)(vitepress@2.0.0-alpha.17(@types/node@24.12.0)(jiti@2.4.2)(lightningcss@1.29.2)(postcss@8.5.8)(sass@1.99.0)(typescript@6.0.2)(yaml@2.7.0))(vue@3.5.32(typescript@6.0.2))
       sass:
         specifier: ^1.99.0
         version: 1.99.0
@@ -319,8 +319,8 @@ packages:
     resolution: {integrity: sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg==}
     engines: {node: '>= 10.0.0'}
 
-  '@roidmc/horizon-theme@0.0.11':
-    resolution: {integrity: sha512-iereOM82TCcDni1VYF+Qu/NllxwJ08MZBvzTumoFPOjTsf+NQVj5bHAMly8eZc5WSTKYnXbPdEr2VmTuUQZtyg==}
+  '@roidmc/horizon-theme@0.0.12':
+    resolution: {integrity: sha512-YGmo77VJvdbo0SxfWzzJdUDnrTKxcLhGDzWYs046TrpdSmqE2KaEcMkI4zgto6ftP98AEMBxcQk/jlGnQld4Zw==}
     engines: {node: '>=22'}
     peerDependencies:
       typescript: '>=5.6.0'
@@ -1234,7 +1234,7 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  '@roidmc/horizon-theme@0.0.11(typescript@6.0.2)(vitepress@2.0.0-alpha.17(@types/node@24.12.0)(jiti@2.4.2)(lightningcss@1.29.2)(postcss@8.5.8)(sass@1.99.0)(typescript@6.0.2)(yaml@2.7.0))(vue@3.5.32(typescript@6.0.2))':
+  '@roidmc/horizon-theme@0.0.12(typescript@6.0.2)(vitepress@2.0.0-alpha.17(@types/node@24.12.0)(jiti@2.4.2)(lightningcss@1.29.2)(postcss@8.5.8)(sass@1.99.0)(typescript@6.0.2)(yaml@2.7.0))(vue@3.5.32(typescript@6.0.2))':
     dependencies:
       '@11ty/gray-matter': 2.0.1
       typescript: 6.0.2
