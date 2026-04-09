@@ -15,7 +15,7 @@ export default defineConfig(defineHorizonConfig({
 
   // 启用 sidebar 自动生成
   sidebar: {
-    debugPrint: false,
+    debugPrint: true,
     collapsed: true,
     useTitleFromFileHeading: true,
     includeRootIndexFile: true
